@@ -302,6 +302,37 @@
             text-transform: uppercase;
         }
 
+        .metodo-box {
+            background: #e3f0fa;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #f4c542;
+        }
+
+        .passo-metodo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            background: white;
+            padding: 1rem;
+            border-radius: 3rem;
+        }
+
+        .numero-passo {
+            background: #f4c542;
+            color: #1e3d5e;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
         @media (max-width: 600px) {
             .header h1 { font-size: 2rem; flex-wrap: wrap; }
             .conteudo { padding: 1.5rem; }
@@ -335,6 +366,35 @@
                 </div>
             </div>
 
+            <!-- MÉTODO PASSO A PASSO - NOVO -->
+            <div class="secao">
+                <h2>📝 Como fazer regra de três</h2>
+                
+                <div class="metodo-box">
+                    <h3 style="margin-top: 0; color: #1e3d5e;">Método prático em 4 passos:</h3>
+                    
+                    <div class="passo-metodo">
+                        <div class="numero-passo">1</div>
+                        <div><strong>Identifique as grandezas</strong> - Separe os valores em duas colunas: grandeza A e grandeza B</div>
+                    </div>
+                    
+                    <div class="passo-metodo">
+                        <div class="numero-passo">2</div>
+                        <div><strong>Verifique a proporção</strong> - Pergunte: se uma aumenta, a outra aumenta (direta) ou diminui (inversa)?</div>
+                    </div>
+                    
+                    <div class="passo-metodo">
+                        <div class="numero-passo">3</div>
+                        <div><strong>Monte a equação</strong> - Direta: multiplica cruzado. Inversa: multiplica reto</div>
+                    </div>
+                    
+                    <div class="passo-metodo">
+                        <div class="numero-passo">4</div>
+                        <div><strong>Resolva</strong> - Isole o x e faça a divisão</div>
+                    </div>
+                </div>
+            </div>
+
             <!-- tabela resumo das proporções -->
             <div class="secao">
                 <h2>⚖️ Direta x Inversa</h2>
@@ -347,66 +407,170 @@
                 </div>
             </div>
 
-            <!-- exemplos práticos -->
+            <!-- MAIS EXEMPLOS - NOVA SEÇÃO COM EXEMPLOS DETALHADOS -->
             <div class="secao">
-                <h2>✍️ Exemplos resolvidos</h2>
+                <h2>📚 Exemplos detalhados de como fazer</h2>
+                
                 <div class="grid-exemplos">
-                    <!-- exemplo 1: direta -->
+                    <!-- Exemplo 1: Direta - passo a passo -->
                     <div class="exemplo-item">
-                        <h4><i>🥖</i> Direta</h4>
-                        <span class="problema">Problema típico</span>
-                        <p style="font-weight: 500;">5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
+                        <h4><i>🥖</i> Exemplo 1 - Direta</h4>
+                        <span class="problema">Problema: pães</span>
+                        <p>5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
                         <div class="resolucao">
-                            <p><span class="fracao">5 pães → R$8</span>  <span class="fracao">12 pães → x</span></p>
-                            <p>✖️ Multiplica cruzado (direta):</p>
-                            <p><strong>5 · x = 12 · 8</strong></p>
-                            <p>5x = 96  →  x = 96/5 = <strong>19,2</strong></p>
+                            <p><strong>Passo 1:</strong> Organizar os dados</p>
+                            <p>5 pães → R$ 8,00</p>
+                            <p>12 pães → x</p>
+                            <p><strong>Passo 2:</strong> Identificar proporção</p>
+                            <p>➕ Mais pães = mais reais (DIRETA)</p>
+                            <p><strong>Passo 3:</strong> Montar equação (multiplica cruzado)</p>
+                            <p>5 · x = 12 · 8</p>
+                            <p><strong>Passo 4:</strong> Resolver</p>
+                            <p>5x = 96 → x = 96 ÷ 5 = 19,2</p>
                         </div>
                         <div class="resposta">✅ R$ 19,20</div>
                     </div>
 
-                    <!-- exemplo 2: inversa -->
+                    <!-- Exemplo 2: Inversa - passo a passo -->
                     <div class="exemplo-item">
-                        <h4><i>🚗</i> Inversa</h4>
-                        <span class="problema">velocidade × tempo</span>
-                        <p>A 60 km/h, uma viagem dura 5 h. Se aumentar para 100 km/h, quanto tempo leva?</p>
+                        <h4><i>🚗</i> Exemplo 2 - Inversa</h4>
+                        <span class="problema">Problema: velocidade</span>
+                        <p>A 60 km/h, uma viagem dura 5 h. A 100 km/h, quanto tempo leva?</p>
                         <div class="resolucao">
-                            <p><span class="fracao">60 km/h → 5 h</span>  <span class="fracao">100 km/h → y</span></p>
-                            <p>⚠️ Inversa → multiplica “reto”:</p>
-                            <p><strong>60 · 5 = 100 · y</strong></p>
-                            <p>300 = 100y → y = 3</p>
+                            <p><strong>Passo 1:</strong> Organizar os dados</p>
+                            <p>60 km/h → 5 h</p>
+                            <p>100 km/h → y</p>
+                            <p><strong>Passo 2:</strong> Identificar proporção</p>
+                            <p>⬆️ Mais velocidade = menos tempo (INVERSA)</p>
+                            <p><strong>Passo 3:</strong> Montar equação (multiplica reto)</p>
+                            <p>60 · 5 = 100 · y</p>
+                            <p><strong>Passo 4:</strong> Resolver</p>
+                            <p>300 = 100y → y = 300 ÷ 100 = 3</p>
                         </div>
                         <div class="resposta">✅ 3 horas</div>
                     </div>
 
-                    <!-- exemplo 3: contexto cotidiano -->
+                    <!-- Exemplo 3: Direta com fração -->
                     <div class="exemplo-item">
-                        <h4><i>🧃</i> Direta (receita)</h4>
-                        <span class="problema">Ajustar ingredientes</span>
-                        <p>Para 4 porções uso 300g de farinha. Quantos gramas para 10 porções?</p>
+                        <h4><i>🧃</i> Exemplo 3 - Receita</h4>
+                        <span class="problema">Problema: ingredientes</span>
+                        <p>Para 4 porções uso 300g de farinha. Para 10 porções?</p>
                         <div class="resolucao">
-                            <p><span class="fracao">4 porções → 300g</span>  <span class="fracao">10 porções → f</span></p>
-                            <p>4 · f = 10 · 300  →  4f = 3000 → f = 750</p>
+                            <p><strong>Passo 1:</strong> 4 porções → 300g</p>
+                            <p>10 porções → f</p>
+                            <p><strong>Passo 2:</strong> DIRETA (mais porções = mais farinha)</p>
+                            <p><strong>Passo 3:</strong> 4 · f = 10 · 300</p>
+                            <p><strong>Passo 4:</strong> 4f = 3000 → f = 750</p>
                         </div>
                         <div class="resposta">✅ 750 gramas</div>
                     </div>
                 </div>
+
+                <!-- MAIS EXEMPLOS ADICIONAIS -->
+                <div class="grid-exemplos" style="margin-top: 1rem;">
+                    <!-- Exemplo 4: Inversa com operários -->
+                    <div class="exemplo-item">
+                        <h4><i>👷</i> Exemplo 4 - Inversa</h4>
+                        <span class="problema">Problema: operários</span>
+                        <p>8 operários fazem uma obra em 30 dias. 12 operários levam quantos dias?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>8 operários → 30 dias</p>
+                            <p>12 operários → d dias</p>
+                            <p><strong>INVERSA</strong> (mais operários = menos dias)</p>
+                            <p>8 · 30 = 12 · d</p>
+                            <p>240 = 12d → d = 20</p>
+                        </div>
+                        <div class="resposta">✅ 20 dias</div>
+                    </div>
+
+                    <!-- Exemplo 5: Direta com metros -->
+                    <div class="exemplo-item">
+                        <h4><i>📏</i> Exemplo 5 - Direta</h4>
+                        <span class="problema">Problema: tecido</span>
+                        <p>3 metros de tecido custam R$ 45. Quanto custam 7 metros?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>3 m → R$ 45</p>
+                            <p>7 m → x</p>
+                            <p><strong>DIRETA</strong></p>
+                            <p>3 · x = 7 · 45</p>
+                            <p>3x = 315 → x = 105</p>
+                        </div>
+                        <div class="resposta">✅ R$ 105,00</div>
+                    </div>
+
+                    <!-- Exemplo 6: Inversa com torneiras -->
+                    <div class="exemplo-item">
+                        <h4><i>🚰</i> Exemplo 6 - Inversa</h4>
+                        <span class="problema">Problema: torneiras</span>
+                        <p>3 torneiras enchem um tanque em 4h. 5 torneiras em quanto tempo?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>3 torneiras → 4h</p>
+                            <p>5 torneiras → t</p>
+                            <p><strong>INVERSA</strong></p>
+                            <p>3 · 4 = 5 · t</p>
+                            <p>12 = 5t → t = 2,4h = 2h24min</p>
+                        </div>
+                        <div class="resposta">✅ 2h24min</div>
+                    </div>
+                </div>
             </div>
 
-            <!-- mais um exemplo com inversa destacada -->
+            <!-- DICA PARA IDENTIFICAR PROPORÇÃO -->
             <div class="secao">
-                <h2>🔄 Exemplo clássico – Inversa</h2>
+                <h2>🔑 Como identificar se é direta ou inversa?</h2>
                 <div style="background: #e7f0f9; border-radius: 2rem; padding: 1.5rem;">
-                    <p style="font-size: 1.2rem;"><span style="background: #f4c542; padding:0.2rem 1rem; border-radius:40px;">⚡ 3 torneiras enchem uma piscina em 4h. Em quanto tempo 5 torneiras iguais encheriam?</span></p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 1rem;">
-                        <div style="flex: 1; min-width: 200px;">
-                            <p><span class="fracao">3 torneiras → 4h</span>  <span class="fracao">5 torneiras → t</span></p>
-                            <p style="font-size:1.2rem; margin-top:0.8rem;"><strong>⬇️ inversa → 3·4 = 5·t</strong></p>
-                            <p>12 = 5t → t = 2,4 h = 2h24min</p>
-                            <div class="resposta" style="margin-top:0.5rem;">🕒 2 horas e 24 minutos</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                        <div style="background: white; padding: 1.5rem; border-radius: 1.5rem;">
+                            <h3 style="color: #2a7a2a; margin-top: 0;">✅ Direta</h3>
+                            <ul style="list-style-type: none;">
+                                <li style="margin: 1rem 0;">📈 <strong>Mais</strong> → <strong>Mais</strong></li>
+                                <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Menos</strong></li>
+                                <li style="margin: 1rem 0;">✖️ Multiplica <strong>cruzado</strong></li>
+                            </ul>
                         </div>
-                        <div style="background: #c5dff2; border-radius: 40px; padding:1rem; font-weight:600;">
-                            💧 mais torneiras ⇒ menos tempo
+                        <div style="background: white; padding: 1.5rem; border-radius: 1.5rem;">
+                            <h3 style="color: #b3442c; margin-top: 0;">🔄 Inversa</h3>
+                            <ul style="list-style-type: none;">
+                                <li style="margin: 1rem 0;">📈 <strong>Mais</strong> → <strong>Menos</strong></li>
+                                <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Mais</strong></li>
+                                <li style="margin: 1rem 0;">✖️ Multiplica <strong>reto</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXEMPLO CLÁSSICO DESTACADO -->
+            <div class="secao">
+                <h2>🎯 Exemplo clássico resolvido</h2>
+                <div style="background: #fff3e0; border-radius: 2rem; padding: 2rem; border: 3px solid #f4c542;">
+                    <p style="font-size: 1.3rem; font-weight: 600;">🚰 3 torneiras enchem uma piscina em 4 horas. Em quanto tempo 5 torneiras iguais encheriam a mesma piscina?</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.5rem;">
+                        <div style="flex: 1; min-width: 250px;">
+                            <p><strong>1. Organizar:</strong></p>
+                            <p>3 torneiras → 4 horas</p>
+                            <p>5 torneiras → x horas</p>
+                            
+                            <p><strong>2. Identificar:</strong> <span style="color: #c45b2c;">INVERSA</span></p>
+                            <p>(mais torneiras = menos tempo)</p>
+                            
+                            <p><strong>3. Montar (multiplica reto):</strong></p>
+                            <p>3 · 4 = 5 · x</p>
+                            
+                            <p><strong>4. Resolver:</strong></p>
+                            <p>12 = 5x → x = 12 ÷ 5 = 2,4</p>
+                            
+                            <p><strong>5. Converter:</strong> 0,4h = 0,4 × 60 = 24 min</p>
+                        </div>
+                        
+                        <div style="background: #1e3d5e; color: white; padding: 1.5rem; border-radius: 2rem; flex: 1; min-width: 200px;">
+                            <p style="font-size: 1.5rem; margin: 0;">⏱️ <strong>Resposta:</strong></p>
+                            <p style="font-size: 2rem; font-weight: 700; margin: 0.5rem 0;">2 horas e 24 minutos</p>
+                            <p>✅ Verificação: 3 torneiras × 4h = 5 torneiras × 2,4h (12 = 12)</p>
                         </div>
                     </div>
                 </div>
@@ -414,31 +578,26 @@
 
             <!-- dica para regra de três composta (visão geral) -->
             <div class="secao">
-                <h2>🧩 Preparação: regra de três composta</h2>
+                <h2>🧩 Regra de três composta</h2>
                 <div style="background: linear-gradient(135deg, #faf6ea, #fff6e0); padding: 1.5rem; border-radius: 2rem;">
-                    <p style="font-size:1.2rem;">No 1º ano você já pode encontrar problemas com <strong>três ou mais grandezas</strong>. Exemplo clássico:</p>
+                    <p style="font-size:1.2rem;">Problemas com <strong>três ou mais grandezas</strong>:</p>
                     <p style="margin: 1rem 0;">🏭 <em>5 máquinas produzem 1200 peças em 3 dias. Quantas peças farão 4 máquinas em 5 dias?</em></p>
-                    <p>Organizamos as grandezas e comparamos cada uma com a incógnita (peças).</p>
-                    <div style="background: white; border-radius: 1.8rem; padding: 1rem; margin: 1rem 0; font-family: monospace; font-size: 1.2rem; text-align: center;">
-                        <span class="fracao">máquinas ↓5 → 1200 peças ↑? (diretamente)</span>  <span class="fracao">dias ↑3 → 1200 peças ↑? (diretamente)</span>
+                    
+                    <div style="background: white; border-radius: 1.5rem; padding: 1.5rem;">
+                        <p><strong>Como fazer:</strong></p>
+                        <p>1. Coloque a grandeza com incógnita (peças) isolada</p>
+                        <p>2. Compare cada grandeza com "peças":</p>
+                        <ul style="margin-left: 2rem;">
+                            <li>MÁQUINAS: menos máquinas → menos peças (DIRETA)</li>
+                            <li>DIAS: mais dias → mais peças (DIRETA)</li>
+                        </ul>
+                        <p>3. Monte a proporção:</p>
+                        <p style="font-size: 1.3rem;">1200/x = (5/4) × (3/5)</p>
+                        <p>4. Resolva: 1200/x = 15/20 → 1200/x = 3/4 → 3x = 4800 → x = 1600</p>
                     </div>
-                    <p>Montagem: <strong>1200/x = (5/4) · (3/5)</strong> ⇒ resolve-se em etapas.</p>
-                    <div class="dica" style="margin-top: 0.5rem;">
-                        <strong>📝 Estratégia:</strong> isole a grandeza com a incógnita e compare as demais (se são direta ou inversamente proporcionais).
-                    </div>
+                    
+                    <div class="resposta" style="margin-top: 1rem;">✅ 1600 peças</div>
                 </div>
-            </div>
-
-            <!-- resumo visual interativo (passos) -->
-            <div style="background: #fff; border-radius: 2rem; padding: 1.8rem; margin: 2rem 0 0.5rem; border: 2px solid #f0c27b;">
-                <h3 style="margin-top: 0;">📋 Passo a passo (regra de três simples)</h3>
-                <ol style="margin-left: 1.8rem; font-size: 1.2rem; list-style-type: decimal; line-height: 2;">
-                    <li><strong>Identificar</strong> as grandezas e ver se são direta ou inversamente proporcionais.</li>
-                    <li><strong>Montar</strong> a tabela com os valores (colocar x no desconhecido).</li>
-                    <li><strong>Multiplicar</strong> conforme a proporção (cruzado se direta, reto se inversa).</li>
-                    <li><strong>Resolver</strong> a equação simples.</li>
-                    <li><strong>Interpretar</strong> o resultado (unidade, contexto).</li>
-                </ol>
             </div>
         </div>
 
