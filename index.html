@@ -333,7 +333,7 @@
             font-size: 1.4rem;
         }
 
-        /* NOVOS ESTILOS PARA DESENHOS E FLEXAS */
+        /* ESTILOS PARA DESENHOS E FLEXAS */
         .diagrama-container {
             display: flex;
             flex-direction: column;
@@ -377,6 +377,9 @@
             font-size: 1.1rem;
             min-width: 70px;
         }
+
+        /* REMOVIDO: caixa-valor com números específicos */
+        /* Agora as caixas azuis são apenas contêineres sem números fixos */
 
         .flexa-direita {
             font-size: 2.5rem;
@@ -493,7 +496,7 @@
                         <div><strong>Identifique as grandezas</strong> - Separe os valores em duas colunas: grandeza A e grandeza B</div>
                     </div>
                     
-                    <!-- DESENHO PASSO 1 -->
+                    <!-- DESENHO PASSO 1 - CAIXAS AZUIS SEM NÚMEROS -->
                     <div class="diagrama-container">
                         <div class="diagrama-titulo">📊 Organização dos dados:</div>
                         <div class="flexas-container">
@@ -525,28 +528,28 @@
                             <div style="text-align: center;">
                                 <p><strong style="color: #2a7a2a;">✅ DIRETA</strong></p>
                                 <div class="flexas-container">
-                                    <div class="caixa-valor pequena">+</div>
+                                    <div class="caixa-valor pequena">Aumenta</div>
                                     <span class="flexa-direita">⬆️</span>
-                                    <div class="caixa-valor pequena">+</div>
+                                    <div class="caixa-valor pequena">Aumenta</div>
                                 </div>
                                 <div class="flexas-container">
-                                    <div class="caixa-valor pequena">-</div>
+                                    <div class="caixa-valor pequena">Diminui</div>
                                     <span class="flexa-direita">⬇️</span>
-                                    <div class="caixa-valor pequena">-</div>
+                                    <div class="caixa-valor pequena">Diminui</div>
                                 </div>
                                 <div class="legenda-flexa">Mesmo sentido</div>
                             </div>
                             <div style="text-align: center;">
                                 <p><strong style="color: #b3442c;">🔄 INVERSA</strong></p>
                                 <div class="flexas-container">
-                                    <div class="caixa-valor pequena">+</div>
+                                    <div class="caixa-valor pequena">Aumenta</div>
                                     <span class="flexa-direita">⬇️</span>
-                                    <div class="caixa-valor pequena">-</div>
+                                    <div class="caixa-valor pequena">Diminui</div>
                                 </div>
                                 <div class="flexas-container">
-                                    <div class="caixa-valor pequena">-</div>
+                                    <div class="caixa-valor pequena">Diminui</div>
                                     <span class="flexa-direita">⬆️</span>
-                                    <div class="caixa-valor pequena">+</div>
+                                    <div class="caixa-valor pequena">Aumenta</div>
                                 </div>
                                 <div class="legenda-flexa">Sentidos opostos</div>
                             </div>
@@ -618,11 +621,11 @@
                     <div class="diagrama-container">
                         <div class="diagrama-titulo">🧮 Resolvendo a equação:</div>
                         <div class="diagrama-equacao">
-                            <div class="caixa-valor pequena">5x = 96</div>
+                            <div class="caixa-valor pequena">a · x = b · c</div>
                             <span class="flexa-direita">➡️</span>
-                            <div class="caixa-valor pequena">x = 96 ÷ 5</div>
+                            <div class="caixa-valor pequena">x = (b · c) ÷ a</div>
                             <span class="flexa-direita">➡️</span>
-                            <div class="caixa-valor pequena">x = 19,2</div>
+                            <div class="caixa-valor pequena">x = resultado</div>
                         </div>
                         <div class="legenda-flexa">Passe o número multiplicando para o outro lado dividindo</div>
                     </div>
@@ -641,7 +644,7 @@
                 </div>
             </div>
 
-            <!-- EXEMPLOS COM FLEXAS INDICANDO CADA PASSO -->
+            <!-- EXEMPLOS COM FLEXAS INDICANDO CADA PASSO - SEM NÚMEROS NOS RETÂNGULOS AZUIS -->
             <div class="secao">
                 <h2>📚 Exemplos com flexas explicativas</h2>
                 
@@ -652,7 +655,7 @@
                         <span class="problema">Problema: pães</span>
                         <p>5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
                         
-                        <!-- DESENHO COM FLEXAS -->
+                        <!-- DESENHO COM FLEXAS - SEM NÚMEROS NOS RETÂNGULOS -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div style="display: flex; align-items: center; justify-content: space-around;">
                                 <div style="text-align: center;">
@@ -693,7 +696,7 @@
                         <span class="problema">Problema: velocidade</span>
                         <p>A 60 km/h, uma viagem dura 5 h. A 100 km/h, quanto tempo leva?</p>
                         
-                        <!-- DESENHO COM FLEXAS -->
+                        <!-- DESENHO COM FLEXAS - SEM NÚMEROS NOS RETÂNGULOS -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div style="display: flex; align-items: center; justify-content: space-around;">
                                 <div style="text-align: center;">
@@ -749,7 +752,7 @@
                         <span class="problema">Problema: ingredientes</span>
                         <p>Para 4 porções uso 300g de farinha. Para 10 porções?</p>
                         
-                        <!-- DESENHO SIMPLES -->
+                        <!-- DESENHO SIMPLES - SEM NÚMEROS NOS RETÂNGULOS -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div class="flexas-container">
                                 <div class="caixa-valor pequena">4 porções</div>
@@ -774,12 +777,12 @@
                     </div>
                 </div>
 
-                <!-- EXEMPLO CLÁSSICO COM FLEXAS GRANDES -->
+                <!-- EXEMPLO CLÁSSICO COM FLEXAS GRANDES - SEM NÚMEROS NOS RETÂNGULOS -->
                 <div style="background: #fff3e0; border-radius: 2rem; padding: 2rem; margin-top: 2rem; border: 3px solid #f4c542;">
                     <h3 style="margin-top: 0;">🎯 Exemplo clássico - Torneiras (inversa)</h3>
                     <p style="font-size: 1.2rem;">3 torneiras enchem uma piscina em 4h. Em quanto tempo 5 torneiras iguais encheriam?</p>
                     
-                    <!-- DIAGRAMA GRANDE COM FLEXAS -->
+                    <!-- DIAGRAMA GRANDE COM FLEXAS - SEM NÚMEROS NOS RETÂNGULOS -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin: 2rem 0;">
                         <!-- Primeira linha -->
                         <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
@@ -792,12 +795,4 @@
                             <span style="font-size: 3rem; color: #f4c542;">⚡</span>
                             
                             <div style="text-align: center;">
-                                <div class="caixa-valor" style="background: #b3442c;">5 torneiras</div>
-                                <span style="font-size: 2rem; display: block;">⬇️</span>
-                                <div class="caixa-valor" style="background: #b3442c;">x horas</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Linha de multiplicação -->
-                        <div style="display: flex; align-items: center; gap: 2rem; background: white; padding: 1rem 2rem; border-radius: 3rem;">
-                            <span class="fracao" style="font-size: 1.8rem;">3 · 
+                                <div class="caixa-valor
