@@ -18,24 +18,25 @@
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 20px;
+            align-items: flex-start;
+            padding: 0;
             line-height: 1.5;
             color: #102a42;
         }
 
         .card {
-            max-width: 1000px;
+            max-width: 100%;
             width: 100%;
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(4px);
             background-color: #ffffff;
-            border-radius: 2.5rem;
+            border-radius: 0;
             box-shadow: 0 25px 40px -12px rgba(0, 20, 30, 0.35),
                         0 8px 15px rgba(0,0,0,0.08);
             overflow: hidden;
             transition: all 0.2s ease;
             border: 1px solid rgba(255,255,255,0.5);
+            margin: 0;
         }
 
         /* cabeçalho */
@@ -44,6 +45,7 @@
             padding: 2rem 2.5rem 1.5rem;
             color: white;
             border-bottom: 6px solid #f4c542;
+            width: 100%;
         }
 
         .header h1 {
@@ -55,6 +57,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .header h1 span {
@@ -79,6 +82,7 @@
         /* conteúdo principal */
         .conteudo {
             padding: 2.5rem;
+            width: 100%;
         }
 
         /* seções */
@@ -86,6 +90,7 @@
             margin-bottom: 2.8rem;
             border-bottom: 2px dashed #b3c9db;
             padding-bottom: 1.8rem;
+            width: 100%;
         }
 
         .secao:last-child {
@@ -142,6 +147,7 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.8rem;
             margin: 2rem 0 0.5rem;
+            width: 100%;
         }
 
         .exemplo-item {
@@ -223,6 +229,7 @@
             display: flex;
             justify-content: center;
             margin: 2rem 0 1rem;
+            width: 100%;
         }
 
         table {
@@ -231,8 +238,8 @@
             border-radius: 28px;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0,32,64,0.1);
-            width: auto;
-            min-width: 300px;
+            width: 100%;
+            max-width: 800px;
         }
 
         th {
@@ -275,6 +282,7 @@
             color: #1c415b;
             border-top: 3px solid #f4c542;
             font-weight: 500;
+            width: 100%;
         }
 
         footer a {
@@ -298,6 +306,8 @@
             .header h1 { font-size: 2rem; flex-wrap: wrap; }
             .conteudo { padding: 1.5rem; }
             h2 { font-size: 1.8rem; }
+            table { width: 100%; }
+            th, td { padding: 0.8rem; }
         }
     </style>
 </head>
