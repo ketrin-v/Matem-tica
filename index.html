@@ -116,7 +116,6 @@
             margin: 1.5rem 0 0.8rem;
         }
 
-        /* INTRO TEXT EXPANDIDO - MAIS EXPLICATIVO */
         .intro-text {
             font-size: 1.2rem;
             background: #ebf3fa;
@@ -357,7 +356,7 @@
             font-size: 1.4rem;
         }
 
-        /* ESTILOS PARA DESENHOS E FLEXAS */
+        /* ESTILOS PARA DESENHOS E FLEXAS - VERSÃO SUPER DETALHADA */
         .diagrama-container {
             display: flex;
             flex-direction: column;
@@ -402,72 +401,192 @@
             min-width: 60px;
         }
 
+        .caixa-valor.verde {
+            background: #2a7a2a;
+        }
+
+        .caixa-valor.laranja {
+            background: #b3442c;
+        }
+
         .flexa-direita {
             font-size: 2.5rem;
             color: #f4c542;
             filter: drop-shadow(2px 2px 0 #b47d2e);
         }
 
-        .flexa-dupla {
+        /* ESTILOS NOVOS PARA SETAS DIAGONAIS SUPER EXPLICATIVAS */
+        .diagrama-proporcao {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1.8rem;
-            color: #f4c542;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
         }
 
-        .flexa-cruzada {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 0.5rem;
-        }
-
-        .cruzada-linha {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-
-        .icone-multiplicacao {
-            font-size: 2rem;
-            color: #c45b2c;
-            font-weight: 700;
-            margin: 0 0.5rem;
-        }
-
-        .legenda-flexa {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 0.3rem;
-            font-style: italic;
-        }
-
-        .diagrama-equacao {
+        .card-proporcao {
             background: white;
-            border-radius: 1.5rem;
-            padding: 1rem;
-            margin-top: 1rem;
+            border-radius: 2rem;
+            padding: 2rem;
+            box-shadow: 0 10px 0 rgba(0,0,0,0.1);
+            min-width: 280px;
+            border: 3px solid;
+        }
+
+        .card-proporcao.direta {
+            border-color: #2a7a2a;
+        }
+
+        .card-proporcao.inversa {
+            border-color: #b3442c;
+        }
+
+        .proporcao-titulo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .proporcao-titulo.direta {
+            color: #2a7a2a;
+        }
+
+        .proporcao-titulo.inversa {
+            color: #b3442c;
+        }
+
+        .grade-setas {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .linha-seta {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 1rem;
+        }
+
+        .circulo-valor {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 5px 0 rgba(0,0,0,0.2);
+        }
+
+        .circulo-valor.verde {
+            background: #2a7a2a;
+        }
+
+        .circulo-valor.vermelho {
+            background: #b3442c;
+        }
+
+        .circulo-valor.azul {
+            background: #1e3d5e;
+        }
+
+        .seta-diagonal {
+            font-size: 3rem;
+            filter: drop-shadow(2px 2px 0 #888);
+        }
+
+        .seta-diagonal.cima-baixo {
+            transform: rotate(0deg);
+        }
+
+        .seta-diagonal.baixo-cima {
+            transform: rotate(180deg);
+        }
+
+        .seta-diagonal.direita {
+            transform: rotate(0deg);
+        }
+
+        .legenda-proporcao {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        .exemplo-pratico {
+            background: #eef4f8;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .icone-seta {
+            font-size: 2rem;
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        .icone-seta.diagonal-cima {
+            transform: rotate(-45deg);
+        }
+
+        .icone-seta.diagonal-baixo {
+            transform: rotate(45deg);
+        }
+
+        .tabela-comparativa {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
             flex-wrap: wrap;
         }
 
-        .operador {
-            font-size: 2rem;
-            color: #1e3d5e;
-            font-weight: 700;
+        .coluna-comparativa {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .exemplo-flexas {
+        .exemplo-grafico {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             margin: 1rem 0;
-            padding: 1rem;
-            background: rgba(244, 197, 66, 0.1);
-            border-radius: 2rem;
+        }
+
+        .barra-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .barra {
+            height: 30px;
+            background: #f4c542;
+            border-radius: 15px;
+            transition: width 0.3s;
+        }
+
+        .barra.curta {
+            width: 50px;
+        }
+
+        .barra.longa {
+            width: 100px;
         }
 
         @media (max-width: 600px) {
@@ -492,7 +611,7 @@
         </div>
 
         <div class="conteudo">
-            <!-- introdução EXPANDIDA e MAIS EXPLICATIVA -->
+            <!-- introdução rápida -->
             <div class="secao">
                 <h2>🔍 O que é Regra de Três?</h2>
                 <div class="intro-text">
@@ -518,11 +637,6 @@
                 <div class="dica">
                     <strong>📌 Grandezas diretamente proporcionais</strong> → Quando uma grandeza <strong>aumenta</strong>, a outra <strong>aumenta na mesma proporção</strong>. Exemplo: Quanto mais km percorridos, mais combustível gasto.<br>
                     <strong>📌 Grandezas inversamente proporcionais</strong> → Quando uma grandeza <strong>aumenta</strong>, a outra <strong>diminui na mesma proporção</strong>. Exemplo: Quanto mais velocidade, menos tempo de viagem.
-                </div>
-                
-                <div style="background: #d9e7f2; border-radius: 1.5rem; padding: 1rem; margin-top: 1rem;">
-                    <p style="font-weight: 700; margin-bottom: 0.5rem;">🧠 <u>Por que aprender regra de três é importante?</u></p>
-                    <p>Porque está presente em diversas situações: cálculo de porcentagens, conversão de unidades, problemas de física (velocidade, densidade), química (concentração de soluções), economia (juros simples), receitas culinárias, planejamento de viagens, e muito mais!</p>
                 </div>
             </div>
 
@@ -558,38 +672,197 @@
                         <div><strong>Verifique a proporção</strong> - Direta (mesmo sentido) ou Inversa (sentidos opostos)</div>
                     </div>
                     
-                    <!-- DESENHO PASSO 2 - DIRETA vs INVERSA -->
-                    <div class="diagrama-container">
-                        <div class="diagrama-titulo">🔍 Identificando a proporção:</div>
-                        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                            <div style="text-align: center;">
-                                <p><strong style="color: #2a7a2a;">✅ DIRETA</strong></p>
-                                <div class="flexas-container">
-                                    <div class="caixa-valor pequena">+</div>
-                                    <span class="flexa-direita">⬆️</span>
-                                    <div class="caixa-valor pequena">+</div>
+                    <!-- DESENHO PASSO 2 - VERSÃO SUPER EXPLICATIVA COM SETAS DIAGONAIS -->
+                    <div class="diagrama-container" style="background: #fff0e0; border: 3px solid #f4c542;">
+                        <div class="diagrama-titulo" style="font-size: 1.5rem;">🔍 IDENTIFICANDO A PROPORÇÃO</div>
+                        
+                        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; width: 100%;">
+                            
+                            <!-- CARD DIREITA - SUPER DETALHADO -->
+                            <div style="flex: 1; min-width: 280px; background: linear-gradient(145deg, #e8f5e8, #c8e6c9); border-radius: 2rem; padding: 2rem; border: 4px solid #2a7a2a; box-shadow: 0 10px 0 #1a5a1a;">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <span style="background: #2a7a2a; color: white; padding: 0.5rem 2rem; border-radius: 3rem; font-size: 2rem; font-weight: 700;">✅ DIRETA</span>
                                 </div>
-                                <div class="flexas-container">
-                                    <div class="caixa-valor pequena">-</div>
-                                    <span class="flexa-direita">⬇️</span>
-                                    <div class="caixa-valor pequena">-</div>
+                                
+                                <!-- Exemplo 1: Aumenta + Aumenta -->
+                                <div style="background: white; border-radius: 1.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                    <div style="display: flex; align-items: center; justify-content: space-around;">
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor verde">+</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Aumenta</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <span style="font-size: 3rem; color: #2a7a2a;">⬆️</span>
+                                            <span style="font-size: 1rem; background: #eee; padding: 0.2rem 0.5rem; border-radius: 1rem;">seta para cima</span>
+                                        </div>
+                                        
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor verde">+</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Aumenta</div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: #2a7a2a;">
+                                        <strong>➕  →  ➕</strong> (mesmo sentido)
+                                    </div>
                                 </div>
-                                <div class="legenda-flexa">Andam juntas: uma aumenta, a outra aumenta</div>
+                                
+                                <!-- Exemplo 2: Diminui + Diminui -->
+                                <div style="background: white; border-radius: 1.5rem; padding: 1.5rem;">
+                                    <div style="display: flex; align-items: center; justify-content: space-around;">
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor verde" style="background: #7a5a2a;">-</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Diminui</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <span style="font-size: 3rem; color: #7a5a2a;">⬇️</span>
+                                            <span style="font-size: 1rem; background: #eee; padding: 0.2rem 0.5rem; border-radius: 1rem;">seta para baixo</span>
+                                        </div>
+                                        
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor verde" style="background: #7a5a2a;">-</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Diminui</div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: #7a5a2a;">
+                                        <strong>➖  →  ➖</strong> (mesmo sentido)
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 1.5rem; padding: 1rem; background: #2a7a2a; color: white; border-radius: 2rem; text-align: center; font-size: 1.2rem;">
+                                    <strong>📈 ANDAM JUNTAS: uma aumenta, a outra aumenta</strong>
+                                </div>
+                                
+                                <div class="exemplo-pratico" style="margin-top: 1rem;">
+                                    <p><strong>🎯 Exemplo prático:</strong> Se você compra <strong>mais</strong> pães, paga <strong>mais</strong> reais.</p>
+                                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem;">
+                                        <span style="background: #2a7a2a; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">5 pães</span>
+                                        <span style="font-size: 2rem;">⬆️</span>
+                                        <span style="background: #2a7a2a; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">R$ 8</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div style="text-align: center;">
-                                <p><strong style="color: #b3442c;">🔄 INVERSA</strong></p>
-                                <div class="flexas-container">
-                                    <div class="caixa-valor pequena">+</div>
-                                    <span class="flexa-direita">⬇️</span>
-                                    <div class="caixa-valor pequena">-</div>
+                            
+                            <!-- CARD INVERSA - SUPER DETALHADO -->
+                            <div style="flex: 1; min-width: 280px; background: linear-gradient(145deg, #ffe8e8, #ffcdd2); border-radius: 2rem; padding: 2rem; border: 4px solid #b3442c; box-shadow: 0 10px 0 #833222;">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <span style="background: #b3442c; color: white; padding: 0.5rem 2rem; border-radius: 3rem; font-size: 2rem; font-weight: 700;">🔄 INVERSA</span>
                                 </div>
-                                <div class="flexas-container">
-                                    <div class="caixa-valor pequena">-</div>
-                                    <span class="flexa-direita">⬆️</span>
-                                    <div class="caixa-valor pequena">+</div>
+                                
+                                <!-- Exemplo 1: Aumenta + Diminui -->
+                                <div style="background: white; border-radius: 1.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                    <div style="display: flex; align-items: center; justify-content: space-around;">
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor vermelho">+</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Aumenta</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <span style="font-size: 3rem; color: #b3442c; transform: rotate(0deg);">⬇️</span>
+                                            <span style="font-size: 1rem; background: #eee; padding: 0.2rem 0.5rem; border-radius: 1rem;">seta para baixo</span>
+                                        </div>
+                                        
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor vermelho" style="background: #7a5a2a;">-</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Diminui</div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: #b3442c;">
+                                        <strong>➕  →  ⬇️  →  ➖</strong> (sentidos opostos)
+                                    </div>
                                 </div>
-                                <div class="legenda-flexa">Andam em sentidos opostos</div>
+                                
+                                <!-- Exemplo 2: Diminui + Aumenta -->
+                                <div style="background: white; border-radius: 1.5rem; padding: 1.5rem;">
+                                    <div style="display: flex; align-items: center; justify-content: space-around;">
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor vermelho" style="background: #7a5a2a;">-</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Diminui</div>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-direction: column; align-items: center;">
+                                            <span style="font-size: 3rem; color: #7a5a2a; transform: rotate(0deg);">⬆️</span>
+                                            <span style="font-size: 1rem; background: #eee; padding: 0.2rem 0.5rem; border-radius: 1rem;">seta para cima</span>
+                                        </div>
+                                        
+                                        <div style="text-align: center;">
+                                            <div class="circulo-valor vermelho">+</div>
+                                            <div style="margin-top: 0.5rem; font-weight: 700;">Aumenta</div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: #7a5a2a;">
+                                        <strong>➖  →  ⬆️  →  ➕</strong> (sentidos opostos)
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 1.5rem; padding: 1rem; background: #b3442c; color: white; border-radius: 2rem; text-align: center; font-size: 1.2rem;">
+                                    <strong>🔄 ANDAM EM SENTIDOS OPOSTOS</strong>
+                                </div>
+                                
+                                <div class="exemplo-pratico" style="margin-top: 1rem;">
+                                    <p><strong>🎯 Exemplo prático:</strong> Se você aumenta a <strong>velocidade</strong>, o <strong>tempo</strong> diminui.</p>
+                                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem;">
+                                        <span style="background: #b3442c; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">60 km/h</span>
+                                        <span style="font-size: 2rem;">⬆️</span>
+                                        <span style="background: #b3442c; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">5 h</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem;">
+                                        <span style="background: #b3442c; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">100 km/h</span>
+                                        <span style="font-size: 2rem;">⬇️</span>
+                                        <span style="background: #b3442c; color: white; padding: 0.3rem 1rem; border-radius: 2rem;">? h</span>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        
+                        <!-- TABELA COMPARATIVA COM SETAS DIAGONAIS -->
+                        <div style="margin-top: 2rem; background: white; border-radius: 2rem; padding: 1.5rem; width: 100%;">
+                            <div style="text-align: center; font-weight: 700; margin-bottom: 1rem; font-size: 1.3rem;">📊 COMPARAÇÃO DIRETA x INVERSA</div>
+                            
+                            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div style="text-align: center;">
+                                    <div style="background: #2a7a2a; color: white; padding: 0.5rem; border-radius: 1rem 1rem 0 0;">DIRETA</div>
+                                    <div style="border: 3px solid #2a7a2a; border-radius: 0 0 1rem 1rem; padding: 1rem;">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="font-size: 2rem;">5</span>
+                                            <span style="font-size: 3rem; color: #2a7a2a;">⬆️</span>
+                                            <span style="font-size: 2rem;">8</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="font-size: 2rem;">12</span>
+                                            <span style="font-size: 3rem; color: #2a7a2a;">⬆️</span>
+                                            <span style="font-size: 2rem;">x</span>
+                                        </div>
+                                        <div style="margin-top: 1rem; font-size: 1.2rem; background: #e8f5e8; padding: 0.5rem; border-radius: 1rem;">
+                                            Multiplica <strong>CRUZADO</strong>: 5·x = 12·8
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="text-align: center;">
+                                    <div style="background: #b3442c; color: white; padding: 0.5rem; border-radius: 1rem 1rem 0 0;">INVERSA</div>
+                                    <div style="border: 3px solid #b3442c; border-radius: 0 0 1rem 1rem; padding: 1rem;">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="font-size: 2rem;">60</span>
+                                            <span style="font-size: 3rem; color: #b3442c;">⬆️</span>
+                                            <span style="font-size: 2rem;">5</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <span style="font-size: 2rem;">100</span>
+                                            <span style="font-size: 3rem; color: #b3442c;">⬇️</span>
+                                            <span style="font-size: 2rem;">y</span>
+                                        </div>
+                                        <div style="margin-top: 1rem; font-size: 1.2rem; background: #ffe8e8; padding: 0.5rem; border-radius: 1rem;">
+                                            Multiplica <strong>RETO</strong>: 60·5 = 100·y
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="legenda-flexa" style="margin-top: 1rem; font-size: 1.1rem;">
+                            <strong>🔑 REGRA DE OURO:</strong> Direta = setas no mesmo sentido | Inversa = setas em sentidos opostos
                         </div>
                     </div>
                     
