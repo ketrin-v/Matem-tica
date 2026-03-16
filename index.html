@@ -116,14 +116,38 @@
             margin: 1.5rem 0 0.8rem;
         }
 
+        /* INTRO TEXT EXPANDIDO - MAIS EXPLICATIVO */
         .intro-text {
             font-size: 1.2rem;
             background: #ebf3fa;
-            padding: 1.2rem 1.8rem;
+            padding: 1.8rem 2rem;
             border-radius: 30px;
             color: #0a3147;
             margin: 0.5rem 0 1.5rem;
             box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+            line-height: 1.7;
+        }
+
+        .intro-text strong {
+            color: #1e3d5e;
+            font-size: 1.3rem;
+        }
+
+        .intro-text ul {
+            margin: 1rem 0 0.5rem 2rem;
+        }
+
+        .intro-text li {
+            margin: 0.7rem 0;
+        }
+
+        .intro-text .destaque-amarelo {
+            background: #f4c542;
+            color: #1e3d5e;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
         }
 
         /* destaques e exemplos */
@@ -378,7 +402,6 @@
             min-width: 60px;
         }
 
-        /* AGORA AS CAIXAS AZUIS CONTÊM APENAS NÚMEROS */
         .flexa-direita {
             font-size: 2.5rem;
             color: #f4c542;
@@ -469,16 +492,37 @@
         </div>
 
         <div class="conteudo">
-            <!-- introdução rápida -->
+            <!-- introdução EXPANDIDA e MAIS EXPLICATIVA -->
             <div class="secao">
-                <h2>🔍 O que é?</h2>
+                <h2>🔍 O que é Regra de Três?</h2>
                 <div class="intro-text">
-                    A <strong>regra de três</strong> é usada para encontrar um valor desconhecido quando temos duas (ou mais) grandezas que se relacionam.  
-                    No 1º ano do Ensino Médio, focamos na <strong>simples</strong> (duas grandezas) e começamos a pensar na <strong>composta</strong>.
+                    <p style="font-size: 1.3rem; margin-bottom: 1rem;">📐 <strong>A regra de três é um método matemático para encontrar um valor desconhecido quando comparamos duas ou mais grandezas que possuem uma relação de proporção.</strong></p>
+                    
+                    <p>Imagine que você está cozinhando e a receita é para 4 pessoas, mas você precisa servir 10 pessoas. Como ajustar a quantidade de ingredientes? Ou então, se você sabe que um carro percorre 300 km com 20 litros de combustível, quantos litros serão necessários para percorrer 450 km? Esses são problemas que a regra de três resolve de forma simples e rápida!</p>
+                    
+                    <div style="background: white; border-radius: 1.5rem; padding: 1rem; margin: 1rem 0;">
+                        <p style="font-weight: 700; color: #1e3d5e;">🔢 <u>Tipos de regra de três estudados no 1º ano do Ensino Médio:</u></p>
+                        <ul>
+                            <li><span class="destaque-amarelo">Regra de três SIMPLES</span> – Envolve apenas <strong>duas grandezas</strong> diretamente ou inversamente proporcionais. É a base para entender o método.</li>
+                            <li><span class="destaque-amarelo">Regra de três COMPOSTA</span> – Envolve <strong>três ou mais grandezas</strong> que se relacionam simultaneamente. Prepara o terreno para problemas mais complexos.</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Mas o que são grandezas?</strong> Grandezas são tudo o que pode ser medido: tempo, velocidade, distância, preço, quantidade de pessoas, litros, quilos, etc. Quando duas grandezas se relacionam, podemos usar regra de três.</p>
+                    
+                    <div style="background: #fef7e8; border-radius: 1rem; padding: 0.8rem 1.2rem; margin: 1rem 0; border-left: 5px solid #f4c542;">
+                        <p style="font-style: italic;">✨ <strong>Exemplo prático do dia a dia:</strong> Se 3 laranjas custam R$ 2,00, quanto custarão 9 laranjas? (Isso é regra de três simples direta!)</p>
+                    </div>
                 </div>
+                
                 <div class="dica">
-                    <strong>📌 Grandezas diretamente proporcionais</strong> → quando uma aumenta, a outra aumenta na mesma proporção.  
-                    <strong>📌 Grandezas inversamente proporcionais</strong> → quando uma aumenta, a outra diminui na mesma proporção.
+                    <strong>📌 Grandezas diretamente proporcionais</strong> → Quando uma grandeza <strong>aumenta</strong>, a outra <strong>aumenta na mesma proporção</strong>. Exemplo: Quanto mais km percorridos, mais combustível gasto.<br>
+                    <strong>📌 Grandezas inversamente proporcionais</strong> → Quando uma grandeza <strong>aumenta</strong>, a outra <strong>diminui na mesma proporção</strong>. Exemplo: Quanto mais velocidade, menos tempo de viagem.
+                </div>
+                
+                <div style="background: #d9e7f2; border-radius: 1.5rem; padding: 1rem; margin-top: 1rem;">
+                    <p style="font-weight: 700; margin-bottom: 0.5rem;">🧠 <u>Por que aprender regra de três é importante?</u></p>
+                    <p>Porque está presente em diversas situações: cálculo de porcentagens, conversão de unidades, problemas de física (velocidade, densidade), química (concentração de soluções), economia (juros simples), receitas culinárias, planejamento de viagens, e muito mais!</p>
                 </div>
             </div>
 
@@ -494,7 +538,7 @@
                         <div><strong>Identifique as grandezas</strong> - Separe os valores em duas colunas</div>
                     </div>
                     
-                    <!-- DESENHO PASSO 1 - APENAS NÚMEROS -->
+                    <!-- DESENHO PASSO 1 -->
                     <div class="diagrama-container">
                         <div class="diagrama-titulo">📊 Organização dos dados:</div>
                         <div class="flexas-container">
@@ -506,7 +550,7 @@
                             <span class="flexa-direita">➡️</span>
                             <div class="caixa-valor pequena">x</div>
                         </div>
-                        <div class="legenda-flexa">5 → 8  |  12 → x</div>
+                        <div class="legenda-flexa">Sempre coloque a grandeza conhecida e seu valor, depois a outra grandeza com x</div>
                     </div>
                     
                     <div class="passo-metodo">
@@ -530,7 +574,7 @@
                                     <span class="flexa-direita">⬇️</span>
                                     <div class="caixa-valor pequena">-</div>
                                 </div>
-                                <div class="legenda-flexa">Mesmo sentido</div>
+                                <div class="legenda-flexa">Andam juntas: uma aumenta, a outra aumenta</div>
                             </div>
                             <div style="text-align: center;">
                                 <p><strong style="color: #b3442c;">🔄 INVERSA</strong></p>
@@ -544,7 +588,7 @@
                                     <span class="flexa-direita">⬆️</span>
                                     <div class="caixa-valor pequena">+</div>
                                 </div>
-                                <div class="legenda-flexa">Sentidos opostos</div>
+                                <div class="legenda-flexa">Andam em sentidos opostos</div>
                             </div>
                         </div>
                     </div>
@@ -580,7 +624,7 @@
                                         <div class="caixa-valor pequena">8</div>
                                     </div>
                                 </div>
-                                <div class="legenda-flexa">5 · x = 12 · 8</div>
+                                <div class="legenda-flexa">Multiplica em X: 5 · x = 12 · 8</div>
                             </div>
                             
                             <div style="text-align: center;">
@@ -600,7 +644,7 @@
                                         <div class="caixa-valor pequena">y</div>
                                     </div>
                                 </div>
-                                <div class="legenda-flexa">60 · 5 = 100 · y</div>
+                                <div class="legenda-flexa">Multiplica reto: 60 · 5 = 100 · y</div>
                             </div>
                         </div>
                     </div>
@@ -624,24 +668,24 @@
                             <span class="flexa-direita">➡️</span>
                             <div class="caixa-valor pequena">19,2</div>
                         </div>
-                        <div class="legenda-flexa">Passe o número multiplicando para o outro lado dividindo</div>
+                        <div class="legenda-flexa">O número que está multiplicando x passa para o outro lado dividindo</div>
                     </div>
                 </div>
             </div>
 
             <!-- tabela resumo das proporções -->
             <div class="secao">
-                <h2>⚖️ Direta x Inversa</h2>
+                <h2>⚖️ Direta x Inversa - Comparação</h2>
                 <div class="tabela-regra">
                     <table>
-                        <tr><th>Relação</th><th>Comportamento</th><th>Exemplo</th></tr>
-                        <tr><td>🔹 Direta</td><td>➕ / ➕  (multiplica cruzado)</td><td>km percorridos e combustível</td></tr>
-                        <tr><td>🔸 Inversa</td><td>⬆️ / ⬇️  (multiplica reto)</td><td>velocidade e tempo de viagem</td></tr>
+                        <tr><th>Relação</th><th>Comportamento</th><th>Exemplo</th><th>Como resolver</th></tr>
+                        <tr><td>🔹 Direta</td><td>➕ / ➕  (mesmo sentido)</td><td>km percorridos e combustível</td><td>Multiplica cruzado</td></tr>
+                        <tr><td>🔸 Inversa</td><td>⬆️ / ⬇️  (sentidos opostos)</td><td>velocidade e tempo de viagem</td><td>Multiplica reto</td></tr>
                     </table>
                 </div>
             </div>
 
-            <!-- EXEMPLOS COM FLEXAS - APENAS NÚMEROS NOS RETÂNGULOS AZUIS -->
+            <!-- EXEMPLOS COM FLEXAS -->
             <div class="secao">
                 <h2>📚 Exemplos com flexas explicativas</h2>
                 
@@ -652,7 +696,7 @@
                         <span class="problema">Problema: pães</span>
                         <p>5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
                         
-                        <!-- DESENHO COM FLEXAS - APENAS NÚMEROS -->
+                        <!-- DESENHO COM FLEXAS -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div style="display: flex; align-items: center; justify-content: space-around;">
                                 <div style="text-align: center;">
@@ -677,6 +721,7 @@
                             <div style="text-align: center; margin-top: 0.5rem; font-weight: 700;">
                                 <span class="fracao">5 · x = 12 · 8</span>
                             </div>
+                            <div class="legenda-flexa" style="margin-top: 0.5rem;">Multiplicação cruzada porque é direta</div>
                         </div>
                         
                         <div class="resolucao">
@@ -693,7 +738,7 @@
                         <span class="problema">Problema: velocidade</span>
                         <p>A 60 km/h, uma viagem dura 5 h. A 100 km/h, quanto tempo leva?</p>
                         
-                        <!-- DESENHO COM FLEXAS - APENAS NÚMEROS -->
+                        <!-- DESENHO COM FLEXAS -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div style="display: flex; align-items: center; justify-content: space-around;">
                                 <div style="text-align: center;">
@@ -733,6 +778,7 @@
                             <div style="text-align: center; margin-top: 0.5rem; font-weight: 700;">
                                 <span class="fracao">60 · 5 = 100 · y</span>
                             </div>
+                            <div class="legenda-flexa" style="margin-top: 0.5rem;">Multiplicação reta porque é inversa</div>
                         </div>
                         
                         <div class="resolucao">
@@ -749,7 +795,7 @@
                         <span class="problema">Problema: ingredientes</span>
                         <p>Para 4 porções uso 300g de farinha. Para 10 porções?</p>
                         
-                        <!-- DESENHO SIMPLES - APENAS NÚMEROS -->
+                        <!-- DESENHO SIMPLES -->
                         <div style="background: #f2f9ff; padding: 1rem; border-radius: 1rem; margin: 1rem 0;">
                             <div class="flexas-container">
                                 <div class="caixa-valor pequena">4</div>
@@ -764,22 +810,23 @@
                             <div style="text-align: center; margin-top: 0.5rem;">
                                 <span class="fracao">4 · x = 10 · 300</span>
                             </div>
+                            <div class="legenda-flexa" style="margin-top: 0.5rem;">Multiplicação cruzada (direta)</div>
                         </div>
                         
                         <div class="resolucao">
                             <p><strong>Montagem:</strong> 4 → 300  |  10 → x</p>
-                            <p><strong>DIRETA</strong> <span style="font-size: 1.5rem;">⬆️⬆️</span></p>
+                            <p><strong>DIRETA</strong> (mais porções = mais farinha) <span style="font-size: 1.5rem;">⬆️⬆️</span></p>
                             <p>4 · x = 10 · 300 → 4x = 3000 → x = 3000 ÷ 4 = ?</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- EXEMPLO CLÁSSICO COM FLEXAS GRANDES - APENAS NÚMEROS -->
+                <!-- EXEMPLO CLÁSSICO COM FLEXAS GRANDES -->
                 <div style="background: #fff3e0; border-radius: 2rem; padding: 2rem; margin-top: 2rem; border: 3px solid #f4c542;">
                     <h3 style="margin-top: 0;">🎯 Exemplo clássico - Torneiras (inversa)</h3>
-                    <p style="font-size: 1.2rem;">3 torneiras enchem uma piscina em 4h. Em quanto tempo 5 torneiras iguais encheriam?</p>
+                    <p style="font-size: 1.2rem;">3 torneiras enchem uma piscina em 4h. Em quanto tempo 5 torneiras iguais encheriam a mesma piscina?</p>
                     
-                    <!-- DIAGRAMA GRANDE COM FLEXAS - APENAS NÚMEROS -->
+                    <!-- DIAGRAMA GRANDE COM FLEXAS -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin: 2rem 0;">
                         <!-- Primeira linha -->
                         <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center;">
@@ -798,8 +845,97 @@
                             </div>
                         </div>
                         
+                        <!-- Explicação da proporção -->
+                        <div style="background: white; padding: 1rem 2rem; border-radius: 3rem; font-size: 1.2rem;">
+                            <span style="color: #b3442c;">MAIS torneiras</span> <span style="font-size: 2rem;">⬇️</span> <span style="color: #1e3d5e;">MENOS tempo</span> → <strong>INVERSA</strong>
+                        </div>
+                        
                         <!-- Linha de multiplicação -->
                         <div style="display: flex; align-items: center; gap: 2rem; background: white; padding: 1rem 2rem; border-radius: 3rem;">
                             <span class="fracao" style="font-size: 1.8rem;">3 · 4</span>
                             <span style="font-size: 2rem;">=</span>
-                            <span class="frac
+                            <span class="fracao" style="font-size: 1.8rem;">5 · x</span>
+                        </div>
+                        
+                        <div style="background: #1e3d5e; color: white; padding: 1rem 2rem; border-radius: 3rem; font-size: 1.3rem;">
+                            12 = 5x → x = 12 ÷ 5 = 2,4 horas = 2h24min
+                        </div>
+                        <div class="legenda-flexa">Multiplica reto (inversa) e depois divide</div>
+                    </div>
+                    
+                    <p style="text-align: center; font-size: 1.1rem; margin-top: 1rem;"><strong>Resposta:</strong> Com 5 torneiras, a piscina encherá em <strong>2 horas e 24 minutos</strong>.</p>
+                </div>
+
+                <!-- SEÇÃO EXTRA SOBRE REGRA DE TRÊS COMPOSTA -->
+                <div style="background: linear-gradient(135deg, #e3f0fa, #d2e3f0); border-radius: 2rem; padding: 2rem; margin-top: 2rem;">
+                    <h3 style="margin-top: 0; color: #1e3d5e;">🧩 Regra de Três Composta - Introdução</h3>
+                    <p style="font-size: 1.2rem;">Quando temos <strong>três ou mais grandezas</strong> se relacionando, usamos a regra de três composta. Veja um exemplo:</p>
+                    
+                    <div style="background: white; border-radius: 1.5rem; padding: 1.5rem; margin: 1rem 0;">
+                        <p style="font-weight: 700;">🏭 Exemplo: 5 máquinas produzem 1200 peças em 3 dias. Quantas peças farão 4 máquinas em 5 dias?</p>
+                        
+                        <div style="display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap;">
+                            <div style="text-align: center;">
+                                <div class="caixa-valor pequena" style="background: #1e3d5e;">5</div>
+                                <div class="caixa-valor pequena" style="background: #1e3d5e;">1200</div>
+                                <div class="caixa-valor pequena" style="background: #1e3d5e;">3</div>
+                            </div>
+                            <span style="font-size: 2rem;">⚡</span>
+                            <div style="text-align: center;">
+                                <div class="caixa-valor pequena" style="background: #b3442c;">4</div>
+                                <div class="caixa-valor pequena" style="background: #b3442c;">x</div>
+                                <div class="caixa-valor pequena" style="background: #b3442c;">5</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Passo a passo:</strong></p>
+                        <ol style="margin-left: 2rem; line-height: 2;">
+                            <li>Comparamos cada grandeza com a incógnita (peças):</li>
+                            <ul>
+                                <li>MÁQUINAS: 4 máquinas (menos que 5) → menos peças → <strong>DIRETA</strong></li>
+                                <li>DIAS: 5 dias (mais que 3) → mais peças → <strong>DIRETA</strong></li>
+                            </ul>
+                            <li>Montamos a proporção: <span class="fracao">1200/x = (5/4) × (3/5)</span></li>
+                            <li>Simplificamos: <span class="fracao">1200/x = 15/20 = 3/4</span></li>
+                            <li>Resolvemos: <span class="fracao">3x = 4800 → x = 1600 peças</span></li>
+                        </ol>
+                        
+                        <div style="background: #f4c542; color: #1e3d5e; padding: 1rem; border-radius: 2rem; text-align: center; font-weight: 700;">
+                            ✅ Resposta: 4 máquinas em 5 dias produzem 1600 peças
+                        </div>
+                    </div>
+                    
+                    <p style="font-style: italic; margin-top: 1rem;">📘 A regra de três composta será estudada com mais profundidade ao longo do 1º ano. O importante agora é entender o conceito de múltiplas grandezas!</p>
+                </div>
+            </div>
+
+            <!-- RESUMO FINAL -->
+            <div class="secao">
+                <h2>📌 Resumo Rápido</h2>
+                <div style="background: #fef7e8; border-radius: 2rem; padding: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <div style="background: white; padding: 1rem; border-radius: 1rem;">
+                            <p style="font-weight: 700; color: #1e3d5e;">🔹 REGRA DE TRÊS SIMPLES</p>
+                            <p>Duas grandezas: Direta (cruzado) ou Inversa (reto)</p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 1rem;">
+                            <p style="font-weight: 700; color: #1e3d5e;">🔸 REGRA DE TRÊS COMPOSTA</p>
+                            <p>Três ou mais grandezas: comparação passo a passo</p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: 1rem;">
+                            <p style="font-weight: 700; color: #1e3d5e;">📐 FÓRMULA GERAL</p>
+                            <p>Organizar → Identificar proporção → Multiplicar → Resolver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- rodapé -->
+        <footer>
+            ✨ Matemática 1º ano – Ensino Médio ✨  •  Regra de Três direta e inversa  •  
+            <a href="#">exercícios</a>  •  <a href="#">mais exemplos</a>  •  🧮
+        </footer>
+    </div>
+</body>
+</html>
