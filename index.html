@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática 1º ano EM | Regra de Três</title>
+    <style>
+        /* Reset e estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: linear-gradient(145deg, #f0f4f8 0%, #d9e2ec 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            line-height: 1.5;
+            color: #102a42;
+        }
+
+        .card {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
+            background-color: #ffffff;
+            border-radius: 2.5rem;
+            box-shadow: 0 25px 40px -12px rgba(0, 20, 30, 0.35),
+                        0 8px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        /* cabeçalho */
+        .header {
+            background: #1e3d5e;
+            padding: 2rem 2.5rem 1.5rem;
+            color: white;
+            border-bottom: 6px solid #f4c542;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header h1 span {
+            background: #f4c542;
+            color: #1e3d5e;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 0.2rem 1rem;
+            border-radius: 60px;
+            box-shadow: 0 6px 0 #b47d2e;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-style: italic;
+            border-left: 4px solid #f4c542;
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* conteúdo principal */
+        .conteudo {
+            padding: 2.5rem;
+        }
+
+        /* seções */
+        .secao {
+            margin-bottom: 2.8rem;
+            border-bottom: 2px dashed #b3c9db;
+            padding-bottom: 1.8rem;
+        }
+
+        .secao:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0b2a40;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            border-bottom: 5px solid #f4c542;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1d4d6e;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            background: #ebf3fa;
+            padding: 1.2rem 1.8rem;
+            border-radius: 30px;
+            color: #0a3147;
+            margin: 0.5rem 0 1.5rem;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        /* destaques e exemplos */
+        .dica {
+            background: #fef7e8;
+            border-left: 8px solid #f4c542;
+            border-radius: 0 24px 24px 0;
+            padding: 1.2rem 1.8rem;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.02);
+        }
+
+        .dica strong {
+            color: #c45b2c;
+            font-size: 1.2rem;
+        }
+
+        .grid-exemplos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0 0.5rem;
+        }
+
+        .exemplo-item {
+            background: #ffffff;
+            border-radius: 1.8rem;
+            padding: 1.8rem 1.5rem;
+            box-shadow: 0 10px 20px -8px rgba(27, 55, 78, 0.2);
+            border: 1px solid #dde9f2;
+            transition: transform 0.1s ease;
+        }
+
+        .exemplo-item:hover {
+            transform: scale(1.02);
+            border-color: #f4c542;
+        }
+
+        .exemplo-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3d5e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .exemplo-item h4 i {
+            font-size: 2rem;
+            font-style: normal;
+        }
+
+        .problema {
+            font-weight: 600;
+            background: #d9e7f2;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: #113750;
+        }
+
+        .resolucao {
+            background: #f2f9ff;
+            padding: 1.2rem;
+            border-radius: 20px;
+            margin: 1rem 0 0;
+            border: 1px solid #c4d9e8;
+            font-size: 1.05rem;
+        }
+
+        .resolucao p {
+            margin: 0.3rem 0;
+        }
+
+        .resposta {
+            background: #1e3d5e;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            border: 2px solid #f4c542;
+        }
+
+        .fracao {
+            font-family: 'Courier New', monospace;
+            font-size: 1.3rem;
+            background: #eef4f8;
+            padding: 0.2rem 0.6rem;
+            border-radius: 16px;
+            display: inline-block;
+            margin: 0 3px;
+        }
+
+        .tabela-regra {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            background: #e6f0f7;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,32,64,0.1);
+            width: auto;
+            min-width: 300px;
+        }
+
+        th {
+            background: #1e3d5e;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 1rem 1.8rem;
+        }
+
+        td {
+            padding: 1rem 1.8rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #b3cde0;
+            text-align: center;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight {
+            background: #f4c542;
+            color: #0a2c40;
+            font-weight: 700;
+            border-radius: 20px;
+        }
+
+        .seta {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: #c9822b;
+        }
+
+        footer {
+            background: #d2e3f0;
+            padding: 1.2rem 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            color: #1c415b;
+            border-top: 3px solid #f4c542;
+            font-weight: 500;
+        }
+
+        footer a {
+            color: #1e3d5e;
+            text-decoration: none;
+            border-bottom: 2px dotted;
+        }
+
+        /* botões e marcações */
+        .tag {
+            background: #f4c542;
+            color: #1e3d5e;
+            border-radius: 30px;
+            padding: 0.2rem 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; flex-wrap: wrap; }
+            .conteudo { padding: 1.5rem; }
+            h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>
+                📐 Matemática 1º ano EM 
+                <span>Regra de Três</span>
+            </h1>
+            <p>👉 direta e inversa — resolvendo problemas do cotidiano</p>
+        </div>
+
+        <div class="conteudo">
+            <!-- introdução rápida -->
+            <div class="secao">
+                <h2>🔍 O que é?</h2>
+                <div class="intro-text">
+                    A <strong>regra de três</strong> é usada para encontrar um valor desconhecido quando temos duas (ou mais) grandezas que se relacionam.  
+                    No 1º ano do Ensino Médio, focamos na <strong>simples</strong> (duas grandezas) e começamos a pensar na <strong>composta</strong>.
+                </div>
+                <div class="dica">
+                    <strong>📌 Grandezas diretamente proporcionais</strong> → quando uma aumenta, a outra aumenta na mesma proporção.  
+                    <strong>📌 Grandezas inversamente proporcionais</strong> → quando uma aumenta, a outra diminui na mesma proporção.
+                </div>
+            </div>
+
+            <!-- tabela resumo das proporções -->
+            <div class="secao">
+                <h2>⚖️ Direta x Inversa</h2>
+                <div class="tabela-regra">
+                    <table>
+                        <tr><th>Relação</th><th>Comportamento</th><th>Exemplo</th></tr>
+                        <tr><td>🔹 Direta</td><td>➕ / ➕  (multiplica cruzado)</td><td>km percorridos e combustível</td></tr>
+                        <tr><td>🔸 Inversa</td><td>⬆️ / ⬇️  (multiplica reto)</td><td>velocidade e tempo de viagem</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- exemplos práticos -->
+            <div class="secao">
+                <h2>✍️ Exemplos resolvidos</h2>
+                <div class="grid-exemplos">
+                    <!-- exemplo 1: direta -->
+                    <div class="exemplo-item">
+                        <h4><i>🥖</i> Direta</h4>
+                        <span class="problema">Problema típico</span>
+                        <p style="font-weight: 500;">5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
+                        <div class="resolucao">
+                            <p><span class="fracao">5 pães → R$8</span>  <span class="fracao">12 pães → x</span></p>
+                            <p>✖️ Multiplica cruzado (direta):</p>
+                            <p><strong>5 · x = 12 · 8</strong></p>
+                            <p>5x = 96  →  x = 96/5 = <strong>19,2</strong></p>
+                        </div>
+                        <div class="resposta">✅ R$ 19,20</div>
+                    </div>
+
+                    <!-- exemplo 2: inversa -->
+                    <div class="exemplo-item">
+                        <h4><i>🚗</i> Inversa</h4>
+                        <span class="problema">velocidade × tempo</span>
+                        <p>A 60 km/h, uma viagem dura 5 h. Se aumentar para 100 km/h, quanto tempo leva?</p>
+                        <div class="resolucao">
+                            <p><span class="fracao">60 km/h → 5 h</span>  <span class="fracao">100 km/h → y</span></p>
+                            <p>⚠️ Inversa → multiplica “reto”:</p>
+                            <p><strong>60 · 5 = 100 · y</strong></p>
+                            <p>300 = 100y → y = 3</p>
+                        </div>
+                        <div class="resposta">✅ 3 horas</div>
+                    </div>
+
+                    <!-- exemplo 3: contexto cotidiano -->
+                    <div class="exemplo-item">
+                        <h4><i>🧃</i> Direta (receita)</h4>
+                        <span class="problema">Ajustar ingredientes</span>
+                        <p>Para 4 porções uso 300g de farinha. Quantos gramas para 10 porções?</p>
+                        <div class="resolucao">
+                            <p><span class="fracao">4 porções → 300g</span>  <span class="fracao">10 porções → f</span></p>
+                            <p>4 · f = 10 · 300  →  4f = 3000 → f = 750</p>
+                        </div>
+                        <div class="resposta">✅ 750 gramas</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mais um exemplo com inversa destacada -->
+            <div class="secao">
+                <h2>🔄 Exemplo clássico – Inversa</h2>
+                <div style="background: #e7f0f9; border-radius: 2rem; padding: 1.5rem;">
+                    <p style="font-size: 1.2rem;"><span style="background: #f4c542; padding:0.2rem 1rem; border-radius:40px;">⚡ 3 torneiras enchem uma piscina em 4h. Em quanto tempo 5 torneiras iguais encheriam?</span></p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 1rem;">
+                        <div style="flex: 1; min-width: 200px;">
+                            <p><span class="fracao">3 torneiras → 4h</span>  <span class="fracao">5 torneiras → t</span></p>
+                            <p style="font-size:1.2rem; margin-top:0.8rem;"><strong>⬇️ inversa → 3·4 = 5·t</strong></p>
+                            <p>12 = 5t → t = 2,4 h = 2h24min</p>
+                            <div class="resposta" style="margin-top:0.5rem;">🕒 2 horas e 24 minutos</div>
+                        </div>
+                        <div style="background: #c5dff2; border-radius: 40px; padding:1rem; font-weight:600;">
+                            💧 mais torneiras ⇒ menos tempo
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dica para regra de três composta (visão geral) -->
+            <div class="secao">
+                <h2>🧩 Preparação: regra de três composta</h2>
+                <div style="background: linear-gradient(135deg, #faf6ea, #fff6e0); padding: 1.5rem; border-radius: 2rem;">
+                    <p style="font-size:1.2rem;">No 1º ano você já pode encontrar problemas com <strong>três ou mais grandezas</strong>. Exemplo clássico:</p>
+                    <p style="margin: 1rem 0;">🏭 <em>5 máquinas produzem 1200 peças em 3 dias. Quantas peças farão 4 máquinas em 5 dias?</em></p>
+                    <p>Organizamos as grandezas e comparamos cada uma com a incógnita (peças).</p>
+                    <div style="background: white; border-radius: 1.8rem; padding: 1rem; margin: 1rem 0; font-family: monospace; font-size: 1.2rem; text-align: center;">
+                        <span class="fracao">máquinas ↓5 → 1200 peças ↑? (diretamente)</span>  <span class="fracao">dias ↑3 → 1200 peças ↑? (diretamente)</span>
+                    </div>
+                    <p>Montagem: <strong>1200/x = (5/4) · (3/5)</strong> ⇒ resolve-se em etapas.</p>
+                    <div class="dica" style="margin-top: 0.5rem;">
+                        <strong>📝 Estratégia:</strong> isole a grandeza com a incógnita e compare as demais (se são direta ou inversamente proporcionais).
+                    </div>
+                </div>
+            </div>
+
+            <!-- resumo visual interativo (passos) -->
+            <div style="background: #fff; border-radius: 2rem; padding: 1.8rem; margin: 2rem 0 0.5rem; border: 2px solid #f0c27b;">
+                <h3 style="margin-top: 0;">📋 Passo a passo (regra de três simples)</h3>
+                <ol style="margin-left: 1.8rem; font-size: 1.2rem; list-style-type: decimal; line-height: 2;">
+                    <li><strong>Identificar</strong> as grandezas e ver se são direta ou inversamente proporcionais.</li>
+                    <li><strong>Montar</strong> a tabela com os valores (colocar x no desconhecido).</li>
+                    <li><strong>Multiplicar</strong> conforme a proporção (cruzado se direta, reto se inversa).</li>
+                    <li><strong>Resolver</strong> a equação simples.</li>
+                    <li><strong>Interpretar</strong> o resultado (unidade, contexto).</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- rodapé -->
+        <footer>
+            ✨ Matemática 1º ano – Ensino Médio ✨  •  Regra de Três direta e inversa  •  
+            <a href="#">exercícios</a>  •  <a href="#">mais exemplos</a>  •  🧮
+        </footer>
+    </div>
+</body>
+</html>
