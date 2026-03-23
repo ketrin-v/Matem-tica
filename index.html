@@ -119,34 +119,11 @@
         .intro-text {
             font-size: 1.2rem;
             background: #ebf3fa;
-            padding: 1.8rem 2rem;
+            padding: 1.2rem 1.8rem;
             border-radius: 30px;
             color: #0a3147;
             margin: 0.5rem 0 1.5rem;
             box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
-            line-height: 1.7;
-        }
-
-        .intro-text strong {
-            color: #1e3d5e;
-            font-size: 1.3rem;
-        }
-
-        .intro-text ul {
-            margin: 1rem 0 0.5rem 2rem;
-        }
-
-        .intro-text li {
-            margin: 0.7rem 0;
-        }
-
-        .intro-text .destaque-amarelo {
-            background: #f4c542;
-            color: #1e3d5e;
-            padding: 0.2rem 0.8rem;
-            border-radius: 30px;
-            font-weight: 600;
-            display: inline-block;
         }
 
         /* destaques e exemplos */
@@ -167,7 +144,7 @@
 
         .grid-exemplos {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.8rem;
             margin: 2rem 0 0.5rem;
             width: 100%;
@@ -356,175 +333,12 @@
             font-size: 1.4rem;
         }
 
-        /* ESTILOS PARA LINHAS E CONEXÕES */
-        .diagrama-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 1.5rem 0;
-            background: #fff9f0;
-            padding: 1.5rem;
-            border-radius: 2rem;
-            border: 2px dashed #f4c542;
-        }
-
-        .diagrama-titulo {
-            font-weight: 700;
-            color: #1e3d5e;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .flexas-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .caixa-valor {
-            background: #1e3d5e;
-            color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 1rem;
-            font-weight: 700;
-            font-size: 1.3rem;
-            min-width: 80px;
-            text-align: center;
-            box-shadow: 0 4px 0 #0a1a2a;
-        }
-
-        .caixa-valor.pequena {
-            padding: 0.7rem 1rem;
-            font-size: 1.1rem;
-            min-width: 60px;
-        }
-
-        /* ESTILOS PARA LINHAS NO LUGAR DE SETAS */
-        .linha-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-
-        .conexao-linha {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-
-        .linha-horizontal {
-            width: 60px;
-            height: 3px;
-            background: #f4c542;
-            margin: 0.5rem 0;
-            box-shadow: 0 2px 0 #b47d2e;
-        }
-
-        .linha-vertical {
-            width: 3px;
-            height: 60px;
-            background: #f4c542;
-            margin: 0 0.5rem;
-            box-shadow: 2px 0 0 #b47d2e;
-        }
-
-        .linha-diagonal-esquerda {
-            width: 3px;
-            height: 70px;
-            background: #f4c542;
-            transform: rotate(-45deg);
-            margin: 0.5rem;
-            box-shadow: 2px 2px 0 #b47d2e;
-        }
-
-        .linha-diagonal-direita {
-            width: 3px;
-            height: 70px;
-            background: #f4c542;
-            transform: rotate(45deg);
-            margin: 0.5rem;
-            box-shadow: 2px -2px 0 #b47d2e;
-        }
-
-        .linha-cruzada {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cruzada-esquerda {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .cruzada-direita {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .operador-matematico {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #c45b2c;
-            margin: 0 1rem;
-        }
-
-        .igual-destaque {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1e3d5e;
-            margin: 0 1rem;
-        }
-
-        .linha-multiplicacao {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            margin: 1rem 0;
-            padding: 1rem;
-            background: white;
-            border-radius: 2rem;
-        }
-
-        .linha-reta {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .simbolo-multiplicacao {
-            font-size: 2rem;
-            color: #c45b2c;
-            font-weight: 700;
-        }
-
-        .conector {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-
         @media (max-width: 600px) {
             .header h1 { font-size: 2rem; flex-wrap: wrap; }
             .conteudo { padding: 1.5rem; }
             h2 { font-size: 1.8rem; }
             table { width: 100%; }
             th, td { padding: 0.8rem; }
-            .flexas-container { flex-direction: column; }
         }
     </style>
 </head>
@@ -539,336 +353,251 @@
         </div>
 
         <div class="conteudo">
-            <!-- introdução -->
+            <!-- introdução rápida -->
             <div class="secao">
-                <h2>🔍 O que é Regra de Três?</h2>
+                <h2>🔍 O que é?</h2>
                 <div class="intro-text">
-                    <p>A regra de três é usada para encontrar um valor desconhecido quando temos duas grandezas que se relacionam. No 1º ano do Ensino Médio, focamos na regra de três simples e começamos a pensar na composta.</p>
+                    A <strong>regra de três</strong> é usada para encontrar um valor desconhecido quando temos duas (ou mais) grandezas que se relacionam.  
+                    No 1º ano do Ensino Médio, focamos na <strong>simples</strong> (duas grandezas) e começamos a pensar na <strong>composta</strong>.
+                </div>
+                <div class="dica">
+                    <strong>📌 Grandezas diretamente proporcionais</strong> → quando uma aumenta, a outra aumenta na mesma proporção.  
+                    <strong>📌 Grandezas inversamente proporcionais</strong> → quando uma aumenta, a outra diminui na mesma proporção.
                 </div>
             </div>
 
-            <!-- EXEMPLO PRINCIPAL - OPERÁRIOS -->
+            <!-- MÉTODO PASSO A PASSO -->
             <div class="secao">
-                <h2>👷 Exemplo: Operários e dias</h2>
+                <h2>📝 Como fazer regra de três</h2>
                 
-                <div style="background: linear-gradient(135deg, #e3f0fa, #d2e3f0); border-radius: 2rem; padding: 2rem;">
-                    <p style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem;">Um muro foi construído por 8 operários em 30 dias. Quantos dias seriam necessários se fossem utilizados 12 operários?</p>
+                <div class="metodo-box">
+                    <h3 style="margin-top: 0; color: #1e3d5e;">Método prático em 4 passos:</h3>
                     
-                    <!-- Tabela -->
-                    <div style="display: flex; justify-content: center; margin: 2rem 0;">
-                        <table style="border-collapse: collapse; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 400px; width: 100%;">
-                            <tr style="background: #1e3d5e; color: white;"><th style="padding: 1rem;">Operários</th><th style="padding: 1rem;">Dias</th></tr>
-                            <tr style="border-bottom: 1px solid #ddd;"><td style="padding: 1rem; text-align: center; font-size: 1.3rem; font-weight: 600;">8</td><td style="padding: 1rem; text-align: center; font-size: 1.3rem; font-weight: 600;">30</td></tr>
-                            <tr><td style="padding: 1rem; text-align: center; font-size: 1.3rem; font-weight: 600;">12</td><td style="padding: 1rem; text-align: center; font-size: 1.3rem; font-weight: 600;">x</td></tr>
-                        </table>
+                    <div class="passo-metodo">
+                        <div class="numero-passo">1</div>
+                        <div><strong>Identifique as grandezas</strong> - Separe os valores em duas colunas: grandeza A e grandeza B</div>
                     </div>
                     
-                    <!-- Representação com linhas (sem setas) -->
-                    <div style="background: white; border-radius: 2rem; padding: 2rem; margin: 2rem 0;">
-                        <div style="text-align: center; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">LINHA DE RACIOCÍNIO:</div>
-                        
-                        <!-- Primeira relação: 8 operários --- 30 dias -->
-                        <div class="linha-container">
-                            <div style="text-align: center;">
-                                <div class="caixa-valor" style="background: #1e3d5e;">8</div>
-                                <div style="margin-top: 0.3rem;">operários</div>
-                            </div>
-                            
-                            <div class="conexao-linha">
-                                <div class="linha-horizontal"></div>
-                                <div style="font-size: 1.2rem; margin: 0.3rem 0;">direta?</div>
-                                <div class="linha-horizontal"></div>
-                            </div>
-                            
-                            <div style="text-align: center;">
-                                <div class="caixa-valor" style="background: #1e3d5e;">30</div>
-                                <div style="margin-top: 0.3rem;">dias</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Segunda relação: 12 operários --- x dias -->
-                        <div class="linha-container" style="margin-top: 2rem;">
-                            <div style="text-align: center;">
-                                <div class="caixa-valor" style="background: #b3442c;">12</div>
-                                <div style="margin-top: 0.3rem;">operários</div>
-                            </div>
-                            
-                            <div class="conexao-linha">
-                                <div class="linha-horizontal"></div>
-                                <div style="font-size: 1.2rem; margin: 0.3rem 0;">inversa?</div>
-                                <div class="linha-horizontal"></div>
-                            </div>
-                            
-                            <div style="text-align: center;">
-                                <div class="caixa-valor" style="background: #b3442c;">x</div>
-                                <div style="margin-top: 0.3rem;">dias</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Comparação com linhas verticais -->
-                        <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena">8</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto;"></div>
-                                <div class="caixa-valor pequena">30</div>
-                            </div>
-                            
-                            <div style="display: flex; flex-direction: column; justify-content: center;">
-                                <span style="font-size: 2rem;">VS</span>
-                            </div>
-                            
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena" style="background: #b3442c;">12</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto; background: #b3442c;"></div>
-                                <div class="caixa-valor pequena" style="background: #b3442c;">x</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Conclusão da proporção -->
-                        <div style="background: #fef7e8; border-radius: 2rem; padding: 1rem; margin: 1rem 0; text-align: center;">
-                            <p style="font-size: 1.3rem;">⬆️ 8 operários --- 30 dias (aumenta? diminui?)</p>
-                            <p style="font-size: 1.3rem;">⬇️ 12 operários --- x dias</p>
-                            <p style="font-size: 1.5rem; font-weight: 700; color: #b3442c;">MAIS operários = MENOS tempo → INVERSA</p>
-                        </div>
+                    <div class="passo-metodo">
+                        <div class="numero-passo">2</div>
+                        <div><strong>Verifique a proporção</strong> - Pergunte: se uma aumenta, a outra aumenta (direta) ou diminui (inversa)?</div>
                     </div>
                     
-                    <!-- Multiplicação com linhas (sem setas) -->
-                    <div style="background: #ffe8e8; border-radius: 2rem; padding: 2rem; margin: 2rem 0;">
-                        <div style="text-align: center; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem;">✖️ MULTIPLICAÇÃO (INVERSA):</div>
-                        
-                        <!-- Representação com linhas retas -->
-                        <div class="linha-multiplicacao">
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena" style="background: #1e3d5e;">8</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto;"></div>
-                                <div class="caixa-valor pequena" style="background: #1e3d5e;">30</div>
-                            </div>
-                            
-                            <div class="conector">
-                                <span class="simbolo-multiplicacao">×</span>
-                                <div class="linha-horizontal" style="width: 30px;"></div>
-                                <span class="igual-destaque">=</span>
-                                <div class="linha-horizontal" style="width: 30px;"></div>
-                                <span class="simbolo-multiplicacao">×</span>
-                            </div>
-                            
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena" style="background: #b3442c;">12</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto; background: #b3442c;"></div>
-                                <div class="caixa-valor pequena" style="background: #b3442c;">x</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Equação resultante -->
-                        <div style="text-align: center; margin: 2rem 0;">
-                            <div style="display: inline-block; background: #1e3d5e; color: white; padding: 1.5rem 3rem; border-radius: 3rem;">
-                                <span style="font-size: 2rem;">8 · 30 = 12 · x</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Representação com linhas diagonais (opcional) -->
-                        <div style="display: flex; justify-content: center; gap: 3rem; margin: 1rem 0;">
-                            <div class="cruzada-esquerda">
-                                <div class="caixa-valor pequena">8</div>
-                                <div class="linha-diagonal-esquerda"></div>
-                                <div class="caixa-valor pequena">x</div>
-                            </div>
-                            
-                            <div style="display: flex; flex-direction: column; justify-content: center;">
-                                <span class="simbolo-multiplicacao" style="font-size: 2.5rem;">×</span>
-                            </div>
-                            
-                            <div class="cruzada-direita">
-                                <div class="caixa-valor pequena">12</div>
-                                <div class="linha-diagonal-direita"></div>
-                                <div class="caixa-valor pequena">30</div>
-                            </div>
-                        </div>
-                        
-                        <div style="text-align: center; margin-top: 1rem; font-style: italic;">Na inversa, multiplicação é RETA, não cruzada</div>
+                    <div class="passo-metodo">
+                        <div class="numero-passo">3</div>
+                        <div><strong>Monte a equação</strong> - Direta: multiplica cruzado. Inversa: multiplica reto</div>
                     </div>
                     
-                    <!-- Passo a passo da resolução -->
-                    <div style="background: white; border-radius: 2rem; padding: 2rem;">
-                        <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <div style="background: #f4c542; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</div>
-                                <div style="background: #eef4f8; padding: 0.8rem 1.5rem; border-radius: 2rem; flex: 1; text-align: center;">8 · 30 = 240</div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <div style="background: #f4c542; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">2</div>
-                                <div style="background: #eef4f8; padding: 0.8rem 1.5rem; border-radius: 2rem; flex: 1; text-align: center;">240 = 12x</div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <div style="background: #f4c542; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">3</div>
-                                <div style="background: #eef4f8; padding: 0.8rem 1.5rem; border-radius: 2rem; flex: 1; text-align: center;">x = 240 ÷ 12</div>
-                            </div>
-                            
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <div style="background: #f4c542; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">4</div>
-                                <div style="background: #f4c542; padding: 0.8rem 1.5rem; border-radius: 2rem; flex: 1; text-align: center; font-weight: 700;">x = 20</div>
-                            </div>
-                        </div>
+                    <div class="passo-metodo">
+                        <div class="numero-passo">4</div>
+                        <div><strong>Resolva</strong> - Isole o x e faça a divisão</div>
                     </div>
                 </div>
             </div>
 
-            <!-- FÓRMULA GERAL a/b · c/d -->
+            <!-- tabela resumo das proporções -->
             <div class="secao">
-                <h2>📐 Fórmula geral da regra de três</h2>
+                <h2>⚖️ Direta x Inversa</h2>
+                <div class="tabela-regra">
+                    <table>
+                        <tr><th>Relação</th><th>Comportamento</th><th>Exemplo</th></tr>
+                        <tr><td>🔹 Direta</td><td>➕ / ➕  (multiplica cruzado)</td><td>km percorridos e combustível</td></tr>
+                        <tr><td>🔸 Inversa</td><td>⬆️ / ⬇️  (multiplica reto)</td><td>velocidade e tempo de viagem</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- EXEMPLOS SEM RESPOSTAS -->
+            <div class="secao">
+                <h2>📚 Exemplos para praticar</h2>
                 
-                <div style="background: linear-gradient(135deg, #f0f4f8, #e3f0fa); border-radius: 3rem; padding: 2.5rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">
-                        <span class="fracao" style="font-size: 2.5rem;">a</span>
-                        <span style="font-size: 3rem;">/</span>
-                        <span class="fracao" style="font-size: 2.5rem;">b</span>
-                        <span style="font-size: 3rem; margin: 0 1rem;">·</span>
-                        <span class="fracao" style="font-size: 2.5rem;">c</span>
-                        <span style="font-size: 3rem;">/</span>
-                        <span class="fracao" style="font-size: 2.5rem;">d</span>
-                    </div>
-                    
-                    <!-- Representação com linhas diagonais -->
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 3rem; margin: 2rem 0; flex-wrap: wrap;">
-                        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-                            <div class="caixa-valor pequena" style="background: #1e3d5e;">a</div>
-                            <div class="linha-diagonal-esquerda"></div>
-                            <div class="caixa-valor pequena" style="background: #1e3d5e;">d</div>
+                <div class="grid-exemplos">
+                    <!-- Exemplo 1: Direta -->
+                    <div class="exemplo-item">
+                        <h4><i>🥖</i> Exemplo 1 - Direta</h4>
+                        <span class="problema">Problema: pães</span>
+                        <p>5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
+                        <div class="resolucao">
+                            <p><strong>Passo 1:</strong> Organizar os dados</p>
+                            <p>5 pães → R$ 8,00</p>
+                            <p>12 pães → x</p>
+                            <p><strong>Passo 2:</strong> Identificar proporção</p>
+                            <p>➕ Mais pães = mais reais (DIRETA)</p>
+                            <p><strong>Passo 3:</strong> Montar equação (multiplica cruzado)</p>
+                            <p>5 · x = 12 · 8</p>
+                            <p><strong>Passo 4:</strong> Resolver</p>
+                            <p>5x = 96 → x = 96 ÷ 5 = ?</p>
                         </div>
-                        
-                        <div class="igual-destaque" style="font-size: 3rem;">=</div>
-                        
-                        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-                            <div class="caixa-valor pequena" style="background: #b3442c;">b</div>
-                            <div class="linha-diagonal-direita"></div>
-                            <div class="caixa-valor pequena" style="background: #b3442c;">c</div>
+                        <!-- RESPOSTA REMOVIDA -->
+                    </div>
+
+                    <!-- Exemplo 2: Inversa -->
+                    <div class="exemplo-item">
+                        <h4><i>🚗</i> Exemplo 2 - Inversa</h4>
+                        <span class="problema">Problema: velocidade</span>
+                        <p>A 60 km/h, uma viagem dura 5 h. A 100 km/h, quanto tempo leva?</p>
+                        <div class="resolucao">
+                            <p><strong>Passo 1:</strong> Organizar os dados</p>
+                            <p>60 km/h → 5 h</p>
+                            <p>100 km/h → y</p>
+                            <p><strong>Passo 2:</strong> Identificar proporção</p>
+                            <p>⬆️ Mais velocidade = menos tempo (INVERSA)</p>
+                            <p><strong>Passo 3:</strong> Montar equação (multiplica reto)</p>
+                            <p>60 · 5 = 100 · y</p>
+                            <p><strong>Passo 4:</strong> Resolver</p>
+                            <p>300 = 100y → y = 300 ÷ 100 = ?</p>
                         </div>
+                        <!-- RESPOSTA REMOVIDA -->
                     </div>
-                    
-                    <div style="font-size: 2.5rem; background: white; padding: 1.5rem; border-radius: 3rem; display: inline-block; margin: 1rem 0;">
-                        <span class="fracao">a · d</span>
-                        <span style="font-size: 2.5rem; margin: 0 1rem;">=</span>
-                        <span class="fracao">b · c</span>
+
+                    <!-- Exemplo 3: Direta com receita -->
+                    <div class="exemplo-item">
+                        <h4><i>🧃</i> Exemplo 3 - Receita</h4>
+                        <span class="problema">Problema: ingredientes</span>
+                        <p>Para 4 porções uso 300g de farinha. Para 10 porções?</p>
+                        <div class="resolucao">
+                            <p><strong>Passo 1:</strong> 4 porções → 300g</p>
+                            <p>10 porções → f</p>
+                            <p><strong>Passo 2:</strong> DIRETA (mais porções = mais farinha)</p>
+                            <p><strong>Passo 3:</strong> 4 · f = 10 · 300</p>
+                            <p><strong>Passo 4:</strong> 4f = 3000 → f = 3000 ÷ 4 = ?</p>
+                        </div>
+                        <!-- RESPOSTA REMOVIDA -->
                     </div>
-                    
-                    <div style="margin-top: 1.5rem; font-size: 1.3rem; background: #fef7e8; padding: 1rem; border-radius: 2rem;">
-                        <strong>Multiplicação cruzada:</strong> a · d = b · c
+                </div>
+
+                <!-- MAIS EXEMPLOS SEM RESPOSTAS -->
+                <div class="grid-exemplos" style="margin-top: 1rem;">
+                    <!-- Exemplo 4: Inversa com operários -->
+                    <div class="exemplo-item">
+                        <h4><i>👷</i> Exemplo 4 - Inversa</h4>
+                        <span class="problema">Problema: operários</span>
+                        <p>8 operários fazem uma obra em 30 dias. 12 operários levam quantos dias?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>8 operários → 30 dias</p>
+                            <p>12 operários → d dias</p>
+                            <p><strong>INVERSA</strong> (mais operários = menos dias)</p>
+                            <p>8 · 30 = 12 · d</p>
+                            <p>240 = 12d → d = 240 ÷ 12 = ?</p>
+                        </div>
+                        <!-- RESPOSTA REMOVIDA -->
+                    </div>
+
+                    <!-- Exemplo 5: Direta com metros -->
+                    <div class="exemplo-item">
+                        <h4><i>📏</i> Exemplo 5 - Direta</h4>
+                        <span class="problema">Problema: tecido</span>
+                        <p>3 metros de tecido custam R$ 45. Quanto custam 7 metros?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>3 m → R$ 45</p>
+                            <p>7 m → x</p>
+                            <p><strong>DIRETA</strong></p>
+                            <p>3 · x = 7 · 45</p>
+                            <p>3x = 315 → x = 315 ÷ 3 = ?</p>
+                        </div>
+                        <!-- RESPOSTA REMOVIDA -->
+                    </div>
+
+                    <!-- Exemplo 6: Inversa com torneiras -->
+                    <div class="exemplo-item">
+                        <h4><i>🚰</i> Exemplo 6 - Inversa</h4>
+                        <span class="problema">Problema: torneiras</span>
+                        <p>3 torneiras enchem um tanque em 4h. 5 torneiras em quanto tempo?</p>
+                        <div class="resolucao">
+                            <p><strong>Montagem:</strong></p>
+                            <p>3 torneiras → 4h</p>
+                            <p>5 torneiras → t</p>
+                            <p><strong>INVERSA</strong></p>
+                            <p>3 · 4 = 5 · t</p>
+                            <p>12 = 5t → t = 12 ÷ 5 = ? horas</p>
+                            <p>Lembre-se: 0,4h = 24 minutos</p>
+                        </div>
+                        <!-- RESPOSTA REMOVIDA -->
                     </div>
                 </div>
             </div>
 
-            <!-- EXEMPLO DIRETA COM LINHAS -->
+            <!-- DICA PARA IDENTIFICAR PROPORÇÃO -->
             <div class="secao">
-                <h2>🥖 Exemplo: Pães (direta)</h2>
-                
-                <div style="background: #e8f5e8; border-radius: 2rem; padding: 2rem;">
-                    <p style="font-size: 1.3rem; font-weight: 600;">5 pães custam R$ 8,00. Quanto custam 12 pães?</p>
-                    
-                    <div style="display: flex; justify-content: center; margin: 2rem 0;">
-                        <table style="border-collapse: collapse; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 400px; width: 100%;">
-                            <tr style="background: #1e3d5e; color: white;"><th style="padding: 1rem;">Pães</th><th style="padding: 1rem;">Preço</th></tr>
-                            <tr style="border-bottom: 1px solid #ddd;"><td style="padding: 1rem; text-align: center; font-size: 1.3rem;">5</td><td style="padding: 1rem; text-align: center; font-size: 1.3rem;">8</td></tr>
-                            <tr><td style="padding: 1rem; text-align: center; font-size: 1.3rem;">12</td><td style="padding: 1rem; text-align: center; font-size: 1.3rem;">x</td></tr>
-                        </table>
-                    </div>
-                    
-                    <!-- Representação com linhas -->
-                    <div style="background: white; border-radius: 2rem; padding: 2rem;">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin: 1rem 0;">
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena">5</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto;"></div>
-                                <div class="caixa-valor pequena">8</div>
-                            </div>
-                            
-                            <span style="font-size: 2rem;">⚡</span>
-                            
-                            <div style="text-align: center;">
-                                <div class="caixa-valor pequena" style="background: #2a7a2a;">12</div>
-                                <div class="linha-vertical" style="margin: 0.5rem auto; background: #2a7a2a;"></div>
-                                <div class="caixa-valor pequena" style="background: #2a7a2a;">x</div>
-                            </div>
+                <h2>🔑 Como identificar se é direta ou inversa?</h2>
+                <div style="background: #e7f0f9; border-radius: 2rem; padding: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                        <div style="background: white; padding: 1.5rem; border-radius: 1.5rem;">
+                            <h3 style="color: #2a7a2a; margin-top: 0;">✅ Direta</h3>
+                            <ul style="list-style-type: none;">
+                                <li style="margin: 1rem 0;">📈 <strong>Mais</strong> → <strong>Mais</strong></li>
+                                <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Menos</strong></li>
+                                <li style="margin: 1rem 0;">✖️ Multiplica <strong>cruzado</strong></li>
+                            </ul>
                         </div>
-                        
-                        <div style="display: flex; justify-content: center; gap: 3rem; margin: 2rem 0;">
-                            <div class="cruzada-esquerda">
-                                <div class="caixa-valor pequena">5</div>
-                                <div class="linha-diagonal-esquerda"></div>
-                                <div class="caixa-valor pequena">x</div>
-                            </div>
-                            
-                            <div class="igual-destaque" style="font-size: 3rem;">=</div>
-                            
-                            <div class="cruzada-direita">
-                                <div class="caixa-valor pequena">12</div>
-                                <div class="linha-diagonal-direita"></div>
-                                <div class="caixa-valor pequena">8</div>
-                            </div>
-                        </div>
-                        
-                        <div style="text-align: center; margin: 1.5rem 0; font-size: 2rem;">
-                            <span class="fracao">5 · x = 12 · 8</span>
-                        </div>
-                        
-                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; background: #eef4f8; padding: 1rem; border-radius: 2rem;">
-                            <span style="font-size: 1.3rem;">5x = 96</span>
-                            <span style="font-size: 2rem;">→</span>
-                            <span style="font-size: 1.3rem;">x = 96 ÷ 5</span>
-                            <span style="font-size: 2rem;">→</span>
-                            <span style="font-size: 1.5rem; font-weight: 700; color: #2a7a2a;">x = 19,2</span>
+                        <div style="background: white; padding: 1.5rem; border-radius: 1.5rem;">
+                            <h3 style="color: #b3442c; margin-top: 0;">🔄 Inversa</h3>
+                            <ul style="list-style-type: none;">
+                                <li style="margin: 1rem 0;">📈 <strong>Mais</strong> → <strong>Menos</strong></li>
+                                <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Mais</strong></li>
+                                <li style="margin: 1rem 0;">✖️ Multiplica <strong>reto</strong></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- RESUMO DAS LINHAS -->
+            <!-- EXEMPLO CLÁSSICO SEM RESPOSTA -->
             <div class="secao">
-                <h2>📏 Resumo das conexões</h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                    <div style="background: #e8f5e8; border-radius: 2rem; padding: 1.5rem; text-align: center;">
-                        <h3 style="color: #2a7a2a;">✅ DIRETA</h3>
-                        <div style="display: flex; justify-content: center; gap: 2rem; margin: 1rem 0;">
-                            <div class="cruzada-esquerda">
-                                <div class="caixa-valor pequena">a</div>
-                                <div class="linha-diagonal-esquerda"></div>
-                                <div class="caixa-valor pequena">x</div>
-                            </div>
-                            <span style="font-size: 2rem;">=</span>
-                            <div class="cruzada-direita">
-                                <div class="caixa-valor pequena">c</div>
-                                <div class="linha-diagonal-direita"></div>
-                                <div class="caixa-valor pequena">b</div>
-                            </div>
+                <h2>🎯 Exemplo clássico para resolver</h2>
+                <div style="background: #fff3e0; border-radius: 2rem; padding: 2rem; border: 3px solid #f4c542;">
+                    <p style="font-size: 1.3rem; font-weight: 600;">🚰 3 torneiras enchem uma piscina em 4 horas. Em quanto tempo 5 torneiras iguais encheriam a mesma piscina?</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.5rem;">
+                        <div style="flex: 1; min-width: 250px;">
+                            <p><strong>1. Organizar:</strong></p>
+                            <p>3 torneiras → 4 horas</p>
+                            <p>5 torneiras → x horas</p>
+                            
+                            <p><strong>2. Identificar:</strong> <span style="color: #c45b2c;">INVERSA</span></p>
+                            <p>(mais torneiras = menos tempo)</p>
+                            
+                            <p><strong>3. Montar (multiplica reto):</strong></p>
+                            <p>3 · 4 = 5 · x</p>
+                            
+                            <p><strong>4. Resolver:</strong></p>
+                            <p>12 = 5x → x = 12 ÷ 5 = ?</p>
+                            
+                            <p><strong>5. Converter:</strong> 0,4h = 0,4 × 60 = 24 min</p>
                         </div>
-                        <p>Multiplica <strong>CRUZADO</strong></p>
-                        <div style="background: white; padding: 0.5rem; border-radius: 1rem; margin-top: 1rem;">
-                            a · x = c · b
+                        
+                        <div style="background: #1e3d5e; color: white; padding: 1.5rem; border-radius: 2rem; flex: 1; min-width: 200px;">
+                            <p style="font-size: 1.5rem; margin: 0;">⏱️ <strong>Resposta:</strong></p>
+                            <p style="font-size: 2rem; font-weight: 700; margin: 0.5rem 0;">? horas e ? minutos</p>
+                            <p>✅ Complete a divisão para encontrar o valor</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dica para regra de três composta -->
+            <div class="secao">
+                <h2>🧩 Regra de três composta</h2>
+                <div style="background: linear-gradient(135deg, #faf6ea, #fff6e0); padding: 1.5rem; border-radius: 2rem;">
+                    <p style="font-size:1.2rem;">Problemas com <strong>três ou mais grandezas</strong>:</p>
+                    <p style="margin: 1rem 0;">🏭 <em>5 máquinas produzem 1200 peças em 3 dias. Quantas peças farão 4 máquinas em 5 dias?</em></p>
+                    
+                    <div style="background: white; border-radius: 1.5rem; padding: 1.5rem;">
+                        <p><strong>Como fazer:</strong></p>
+                        <p>1. Coloque a grandeza com incógnita (peças) isolada</p>
+                        <p>2. Compare cada grandeza com "peças":</p>
+                        <ul style="margin-left: 2rem;">
+                            <li>MÁQUINAS: menos máquinas → menos peças (DIRETA)</li>
+                            <li>DIAS: mais dias → mais peças (DIRETA)</li>
+                        </ul>
+                        <p>3. Monte a proporção:</p>
+                        <p style="font-size: 1.3rem;">1200/x = (5/4) × (3/5)</p>
+                        <p>4. Resolva: 1200/x = 15/20 → 1200/x = 3/4 → 3x = 4800 → x = ?</p>
                     </div>
                     
-                    <div style="background: #ffe8e8; border-radius: 2rem; padding: 1.5rem; text-align: center;">
-                        <h3 style="color: #b3442c;">🔄 INVERSA</h3>
-                        <div style="display: flex; justify-content: center; gap: 2rem; margin: 1rem 0;">
-                            <div style="display: flex; flex-direction: column; align-items: center;">
-                                <div class="caixa-valor pequena">a</div>
-                                <div class="linha-vertical"></div>
-                                <div class="caixa-valor pequena">b</div>
-                            </div>
-                            <span style="font-size: 2rem;">=</span>
-                            <div style="display: flex; flex-direction: column; align-items: center;">
-                                <div class="caixa-valor pequena">c</div>
-                                <div class="linha-vertical"></div>
-                                <div class="caixa-valor pequena">x</div>
-                            </div>
-                        </div>
-                        <p>Multiplica <strong>RETO</strong></p>
-                        <div style="background: white; padding: 0.5rem; border-radius: 1rem; margin-top: 1rem;">
-                            a · b = c · x
-                        </div>
-                    </div>
+                    <!-- RESPOSTA REMOVIDA -->
                 </div>
             </div>
         </div>
