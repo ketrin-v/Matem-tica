@@ -116,6 +116,13 @@
             margin: 1.5rem 0 0.8rem;
         }
 
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e3d5e;
+            margin: 1rem 0 0.5rem;
+        }
+
         .intro-text {
             font-size: 1.2rem;
             background: #ebf3fa;
@@ -333,6 +340,68 @@
             font-size: 1.4rem;
         }
 
+        /* NOVOS ESTILOS PARA CONTEÚDO ADICIONADO */
+        .card-dica {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-left: 5px solid #f4c542;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .grid-extra {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card-exercicio {
+            background: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .card-exercicio:hover {
+            border-color: #f4c542;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .exercicio-numero {
+            background: #f4c542;
+            color: #1e3d5e;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+
+        .linha-resposta {
+            background: #eef4f8;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-top: 0.8rem;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1e3d5e;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 600px) {
             .header h1 { font-size: 2rem; flex-wrap: wrap; }
             .conteudo { padding: 1.5rem; }
@@ -364,6 +433,17 @@
                     <strong>📌 Grandezas diretamente proporcionais</strong> → quando uma aumenta, a outra aumenta na mesma proporção.  
                     <strong>📌 Grandezas inversamente proporcionais</strong> → quando uma aumenta, a outra diminui na mesma proporção.
                 </div>
+                
+                <!-- NOVO: Explicação adicional sobre grandezas -->
+                <div class="card-dica">
+                    <strong>💡 Exemplos práticos do dia a dia:</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li><strong>Direta:</strong> Quanto mais quilômetros você percorre, mais combustível gasta.</li>
+                        <li><strong>Direta:</strong> Quanto mais horas você trabalha, mais dinheiro recebe.</li>
+                        <li><strong>Inversa:</strong> Quanto mais operários em uma obra, menos dias para finalizar.</li>
+                        <li><strong>Inversa:</strong> Quanto mais velocidade, menos tempo de viagem.</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- MÉTODO PASSO A PASSO -->
@@ -393,6 +473,16 @@
                         <div><strong>Resolva</strong> - Isole o x e faça a divisão</div>
                     </div>
                 </div>
+                
+                <!-- NOVO: Fórmula visual -->
+                <div style="background: #fef7e8; border-radius: 1.5rem; padding: 1rem; text-align: center; margin-top: 1rem;">
+                    <p><strong>📐 Fórmula geral da regra de três simples:</strong></p>
+                    <p style="font-size: 1.5rem; margin: 0.5rem 0;">
+                        <span class="fracao">a</span> → <span class="fracao">b</span><br>
+                        <span class="fracao">c</span> → <span class="fracao">x</span>
+                    </p>
+                    <p><strong>Direta:</strong> a · x = b · c &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Inversa:</strong> a · b = c · x</p>
+                </div>
             </div>
 
             <!-- tabela resumo das proporções -->
@@ -407,7 +497,7 @@
                 </div>
             </div>
 
-            <!-- EXEMPLOS SEM RESPOSTAS -->
+            <!-- EXEMPLOS SEM RESPOSTAS (JÁ EXISTENTES) -->
             <div class="secao">
                 <h2>📚 Exemplos para praticar</h2>
                 
@@ -428,7 +518,6 @@
                             <p><strong>Passo 4:</strong> Resolver</p>
                             <p>5x = 96 → x = 96 ÷ 5 = ?</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
 
                     <!-- Exemplo 2: Inversa -->
@@ -447,7 +536,6 @@
                             <p><strong>Passo 4:</strong> Resolver</p>
                             <p>300 = 100y → y = 300 ÷ 100 = ?</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
 
                     <!-- Exemplo 3: Direta com receita -->
@@ -462,11 +550,9 @@
                             <p><strong>Passo 3:</strong> 4 · f = 10 · 300</p>
                             <p><strong>Passo 4:</strong> 4f = 3000 → f = 3000 ÷ 4 = ?</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
                 </div>
 
-                <!-- MAIS EXEMPLOS SEM RESPOSTAS -->
                 <div class="grid-exemplos" style="margin-top: 1rem;">
                     <!-- Exemplo 4: Inversa com operários -->
                     <div class="exemplo-item">
@@ -481,7 +567,6 @@
                             <p>8 · 30 = 12 · d</p>
                             <p>240 = 12d → d = 240 ÷ 12 = ?</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
 
                     <!-- Exemplo 5: Direta com metros -->
@@ -497,7 +582,6 @@
                             <p>3 · x = 7 · 45</p>
                             <p>3x = 315 → x = 315 ÷ 3 = ?</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
 
                     <!-- Exemplo 6: Inversa com torneiras -->
@@ -514,12 +598,63 @@
                             <p>12 = 5t → t = 12 ÷ 5 = ? horas</p>
                             <p>Lembre-se: 0,4h = 24 minutos</p>
                         </div>
-                        <!-- RESPOSTA REMOVIDA -->
                     </div>
                 </div>
             </div>
 
-            <!-- DICA PARA IDENTIFICAR PROPORÇÃO -->
+            <!-- NOVA SEÇÃO: MAIS EXEMPLOS EXTRA -->
+            <div class="secao">
+                <h2>📌 Mais exemplos para fixar</h2>
+                
+                <div class="grid-extra">
+                    <div class="exemplo-item" style="padding: 1.5rem;">
+                        <h4><i>📖</i> Exemplo 7 - Direta</h4>
+                        <span class="problema">Problema: leitura</span>
+                        <p>Um aluno lê 15 páginas em 30 minutos. Quantas páginas lerá em 2 horas?</p>
+                        <div class="resolucao">
+                            <p><strong>Dica:</strong> 2 horas = 120 minutos</p>
+                            <p>15 páginas → 30 min</p>
+                            <p>x páginas → 120 min</p>
+                            <p>30 · x = 15 · 120 → x = 1800 ÷ 30 = ?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exemplo-item" style="padding: 1.5rem;">
+                        <h4><i>🍕</i> Exemplo 8 - Direta</h4>
+                        <span class="problema">Problema: pizza</span>
+                        <p>6 pizzas servem 18 pessoas. Quantas pizzas para 30 pessoas?</p>
+                        <div class="resolucao">
+                            <p>6 pizzas → 18 pessoas</p>
+                            <p>x pizzas → 30 pessoas</p>
+                            <p>18 · x = 6 · 30 → x = 180 ÷ 18 = ?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exemplo-item" style="padding: 1.5rem;">
+                        <h4><i>🏃</i> Exemplo 9 - Inversa</h4>
+                        <span class="problema">Problema: corrida</span>
+                        <p>Correndo a 8 km/h, um atleta completa um percurso em 45 min. Quanto tempo levará a 10 km/h?</p>
+                        <div class="resolucao">
+                            <p>8 km/h → 45 min</p>
+                            <p>10 km/h → x min</p>
+                            <p>8 · 45 = 10 · x → 360 = 10x → x = ?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exemplo-item" style="padding: 1.5rem;">
+                        <h4><i>📦</i> Exemplo 10 - Inversa</h4>
+                        <span class="problema">Problema: empacotamento</span>
+                        <p>5 máquinas empacotam 1000 produtos em 8 horas. 8 máquinas empacotam em quantas horas?</p>
+                        <div class="resolucao">
+                            <p>5 máquinas → 8 h</p>
+                            <p>8 máquinas → x h</p>
+                            <p>5 · 8 = 8 · x → 40 = 8x → x = ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DICA PARA IDENTIFICAR PROPORÇÃO (JÁ EXISTENTE, MAS COM CONTEÚDO ADICIONADO) -->
             <div class="secao">
                 <h2>🔑 Como identificar se é direta ou inversa?</h2>
                 <div style="background: #e7f0f9; border-radius: 2rem; padding: 1.5rem;">
@@ -531,6 +666,9 @@
                                 <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Menos</strong></li>
                                 <li style="margin: 1rem 0;">✖️ Multiplica <strong>cruzado</strong></li>
                             </ul>
+                            <div class="card-dica" style="margin-top: 1rem;">
+                                <strong>🔍 Exemplo:</strong> Quanto mais tempo estudando, mais conteúdo aprendido.
+                            </div>
                         </div>
                         <div style="background: white; padding: 1.5rem; border-radius: 1.5rem;">
                             <h3 style="color: #b3442c; margin-top: 0;">🔄 Inversa</h3>
@@ -539,6 +677,9 @@
                                 <li style="margin: 1rem 0;">📉 <strong>Menos</strong> → <strong>Mais</strong></li>
                                 <li style="margin: 1rem 0;">✖️ Multiplica <strong>reto</strong></li>
                             </ul>
+                            <div class="card-dica" style="margin-top: 1rem;">
+                                <strong>🔍 Exemplo:</strong> Quanto mais velocidade, menos tempo de viagem.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -577,7 +718,65 @@
                 </div>
             </div>
 
-            <!-- dica para regra de três composta -->
+            <!-- NOVA SEÇÃO: EXERCÍCIOS PARA PRATICAR -->
+            <div class="secao">
+                <h2>✏️ Exercícios para praticar</h2>
+                <div class="grid-extra">
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 1</span>
+                        <p><strong>Direta:</strong> Se 7 litros de suco custam R$ 28,00, quanto custam 12 litros?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ (use regra de três)
+                        </div>
+                    </div>
+                    
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 2</span>
+                        <p><strong>Inversa:</strong> 6 pedreiros constroem um muro em 15 dias. Em quantos dias 10 pedreiros fariam o mesmo serviço?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ dias
+                        </div>
+                    </div>
+                    
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 3</span>
+                        <p><strong>Direta:</strong> Um carro percorre 240 km com 20 litros de gasolina. Quantos litros para percorrer 360 km?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ litros
+                        </div>
+                    </div>
+                    
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 4</span>
+                        <p><strong>Inversa:</strong> 4 impressoras imprimem 500 folhas em 3 horas. Em quanto tempo 6 impressoras fariam o mesmo trabalho?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ horas
+                        </div>
+                    </div>
+                    
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 5</span>
+                        <p><strong>Mista:</strong> Uma torneira despeja 15 litros de água por minuto e enche um tanque em 8 horas. Se a vazão for 20 litros por minuto, em quanto tempo encherá?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ horas
+                        </div>
+                    </div>
+                    
+                    <div class="card-exercicio">
+                        <span class="badge">Exercício 6</span>
+                        <p><strong>Direta:</strong> Um trem percorre 450 km em 5 horas. Quantos km percorrerá em 7 horas na mesma velocidade?</p>
+                        <div class="linha-resposta">
+                            💡 Resposta: _______ km
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-dica" style="background: #e3f0fa; margin-top: 1rem;">
+                    <strong>📌 Dica para resolver os exercícios:</strong> Primeiro identifique se é direta ou inversa, depois monte a tabela e aplique a regra!
+                </div>
+            </div>
+
+            <!-- dica para regra de três composta (JÁ EXISTENTE) -->
             <div class="secao">
                 <h2>🧩 Regra de três composta</h2>
                 <div style="background: linear-gradient(135deg, #faf6ea, #fff6e0); padding: 1.5rem; border-radius: 2rem;">
@@ -597,14 +796,61 @@
                         <p>4. Resolva: 1200/x = 15/20 → 1200/x = 3/4 → 3x = 4800 → x = ?</p>
                     </div>
                     
+                    <!-- NOVO: segundo exemplo de regra composta -->
+                    <div style="background: white; border-radius: 1.5rem; padding: 1.5rem; margin-top: 1rem;">
+                        <p><strong>📌 Outro exemplo:</strong> 6 operários trabalhando 8 horas por dia constroem um muro em 10 dias. Quantos operários são necessários para construir o mesmo muro em 5 dias, trabalhando 6 horas por dia?</p>
+                        <p><strong>Resolução:</strong> Operários e dias (inversa), operários e horas/dia (inversa). Montando: 6 · 8 · 10 = x · 6 · 5 → 480 = 30x → x = 16 operários.</p>
+                    </div>
+                    
                     <!-- RESPOSTA REMOVIDA -->
+                </div>
+            </div>
+            
+            <!-- NOVA SEÇÃO: GABARITO DOS EXERCÍCIOS -->
+            <div class="secao">
+                <h2>🔓 Gabarito dos exercícios</h2>
+                <div style="background: #e8f0f5; border-radius: 2rem; padding: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div><strong>Exercício 1:</strong> R$ 48,00</div>
+                        <div><strong>Exercício 2:</strong> 9 dias</div>
+                        <div><strong>Exercício 3:</strong> 30 litros</div>
+                        <div><strong>Exercício 4:</strong> 2 horas</div>
+                        <div><strong>Exercício 5:</strong> 6 horas</div>
+                        <div><strong>Exercício 6:</strong> 630 km</div>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">✅ Confira suas respostas! Se errou, revise os passos da regra de três.</p>
+                </div>
+            </div>
+            
+            <!-- NOVA SEÇÃO: RESUMO FINAL COM DICAS -->
+            <div class="secao">
+                <h2>📌 Resumo final</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: #e3f0fa; border-radius: 1.5rem; padding: 1.2rem;">
+                        <h3 style="margin-top: 0;">✅ Direta</h3>
+                        <p>Multiplicação <strong>cruzada</strong></p>
+                        <p>a/b = c/x → a·x = b·c</p>
+                    </div>
+                    <div style="background: #ffe8e8; border-radius: 1.5rem; padding: 1.2rem;">
+                        <h3 style="margin-top: 0;">🔄 Inversa</h3>
+                        <p>Multiplicação <strong>reta</strong></p>
+                        <p>a → b, c → x → a·b = c·x</p>
+                    </div>
+                    <div style="background: #fef7e8; border-radius: 1.5rem; padding: 1.2rem;">
+                        <h3 style="margin-top: 0;">🧩 Composta</h3>
+                        <p>Compare cada grandeza com a incógnita</p>
+                        <p>Monte a proporção e resolva</p>
+                    </div>
+                </div>
+                <div class="card-dica" style="margin-top: 1.5rem; text-align: center; background: #1e3d5e; color: white;">
+                    <p style="margin: 0;">🎯 <strong>Dica de ouro:</strong> Sempre identifique a proporção antes de montar a equação! Direta = setas no mesmo sentido | Inversa = setas opostas</p>
                 </div>
             </div>
         </div>
 
         <!-- rodapé -->
         <footer>
-            ✨ Matemática 1º ano – Ensino Médio ✨  •  Regra de Três direta e inversa  •  
+            ✨ Matemática 1º ano – Ensino Médio ✨  •  Regra de Três direta e inversa  •  Regra de Três composta  •  
             <a href="#">exercícios</a>  •  <a href="#">mais exemplos</a>  •  🧮
         </footer>
     </div>
